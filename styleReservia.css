@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('Fonts/ralewayregularwebfont.eot');
+    src: url('Fonts/ralewayregularwebfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/ralewayregularwebfont.woff2') format('woff2'),
+         url('Fonts/ralewayregularwebfont.woff') format('woff'),
+         url('Fonts/ralewayregularwebfont.ttf') format('truetype'),
+         url('Fonts/ralewayregularwebfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font_awesome_5_freesolid';
+    src: url('Fonts/font_awesome_5_freesolid900webfont.eot');
+    src: url('Fonts/font_awesome_5_freesolid900webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/font_awesome_5_freesolid900webfont.woff2') format('woff2'),
+         url('Fonts/font_awesome_5_freesolid900webfont.woff') format('woff'),
+         url('Fonts/font_awesome_5_freesolid900webfont.ttf') format('truetype'),
+         url('Fonts/font_awesome_5_freesolid900webfont.svg#font_awesome_5_freesolid') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    font-family: "ralewayregular";
+}
+
+h1
+{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+h2
+{
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+p
+{
+    font-size: 0.7em;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    height: 200%;
+    border: 3px orange solid;
+}
+
+#navigation ul
+{
+    border: 1px green solid;
+}
+
+#navigation li
+{
+    display: inline;
+    list-style-type: none;
+    border: 1px red solid;
+}
+
+#logo_reservia
+{
+    width: 20%;
+}
+
+#entete
+{
+    align-self: flex-end;
+    border: 1px blue solid;
+}
+
+
