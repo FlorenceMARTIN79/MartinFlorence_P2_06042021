@@ -41,22 +41,48 @@ header
     display: flex;
     flex-direction: row;
     height: 300%;
+    margin-right: 0px;
+    padding-top: 5%;
     border: 3px orange solid;
+}
+
+#navigation
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 30%;
+    height: 20 %;
 }
 
 #navigation ul
 {
     display: flex;
-    position: absolute;
-    top: 2%; left: 70%;
     flex-direction: row;
-    align-items: stretch;
-    border: 1px green solid;
+    justify-content: space-around;
+    align-content: flex-start;
+    padding-left: 0px;
+    width: 30 %;
 }
 
 #navigation li
 {
-    border: 1px red solid;
+    font-size: 0.8em;
+    padding-top: 10%;
+    text-decoration: none;
+    color: #0065FC;
+    font-weight: bold;
+}
+
+#navigation li:nth-child(1)
+{
+    border-top: 1px solid;
+}
+
+#navigation a
+{
+    text-decoration: none;
+    color: #0065FC;
 }
 
 #logo_reservia
@@ -67,8 +93,34 @@ header
 #entete
 {
     align-self: flex-end;
-    border: 1px blue solid;
     width: 200%;
+}
+
+.recherche
+{
+    border: 1px green solid;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 68%;
+    height: 30px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.bouton_rechercher
+{
+    width: 100px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #001d47;
+    color: white;
+
+}
+
+.recherche i
+{
+    font-size: 1.5em;
+    border: 1px pink solid;
+    height: 30px;
+    width: 20px;
 }
 
 .filtres
