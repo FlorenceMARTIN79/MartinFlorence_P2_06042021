@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styleReservia.css" />
@@ -7,6 +7,7 @@
         <title>Rerservia.com Planifiez vos vacances de rêve</title>
     </head>
 
+    <body>
         <header>
             <nav id="navigation">
                 <ul>
@@ -19,24 +20,23 @@
                 <img src="images/logo/Reservia.png" alt="logo_Reservia" id="logo_reservia">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-            
-            <form method="form" action="page_fictive.php">
+            <form method="post" action="page_fictive.php">
                 <p class="recherche">
                     <label for="lieu"><i class="fas fa-map-marker-alt"></i></label>
-                        <input type="search" name="lieu" id="lieu" placeholder="Marseille, France"autofocus/>
+                        <input type="search" name="lieu" id="lieu" placeholder="Marseille, France" autofocus/>
                     <input type="submit" value="Rechercher" class="bouton_rechercher"/>
-                    </p>
+                </p>
             </form>
-            <div class="filtres">
-                <p>Filtres</p>
-                <ul class="bouton_filtres">
-                    <li><i class="fas fa-money-bill-wave"></i>Économique</li>
-                    <li><i class="fas fa-child"></i>Familial</li>
-                    <li><i class="fas fa-heart"></i>Romantique</li>
-                    <li><i class="fas fa-dog"></i>Animaux autorisés</li>
-                </ul>
+                    <div class="filtres">
+                    <p>Filtres</p>
+                    <ul class="bouton_filtres">
+                        <li><i class="fas fa-money-bill-wave"></i>Économique</li>
+                        <li><i class="fas fa-child"></i>Familial</li>
+                        <li><i class="fas fa-heart"></i>Romantique</li>
+                        <li><i class="fas fa-dog"></i>Animaux autorisés</li>
+                    </ul>
+                    </div>
             </div>
-            
         </header>
 
         <main>
@@ -78,7 +78,5 @@
             
         </footer>
 
-    <body>
-        
     </body>
 </html>
