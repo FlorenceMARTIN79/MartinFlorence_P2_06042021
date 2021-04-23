@@ -43,7 +43,6 @@ header
     height: 300%;
     margin-right: 0px;
     padding-top: 5%;
-    border: 3px orange solid;
 }
 
 #navigation
@@ -74,20 +73,26 @@ header
     font-weight: bold;
 }
 
+#navigation a
+{
+    color: black;
+    text-decoration: none;
+}
+
 #navigation li:nth-child(1)
 {
     border-top: 1px solid;
+    color: #0065FC;
 }
 
-#navigation a
+#navigation a:visited
 {
-    text-decoration: none;
     color: #0065FC;
 }
 
 #logo_reservia
 {
-    width: 10%;
+    width: 5%;
 }
 
 #entete
@@ -98,9 +103,8 @@ header
 
 .recherche
 {
-    border: 1px green solid;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin-right: 68%;
     height: 30px;
     border-radius: 10px 10px 10px 10px;
@@ -110,24 +114,28 @@ header
 {
     width: 100px;
     border-radius: 0px 10px 10px 0px;
-    background-color: #001d47;
+    background-color: #0065fc;
     color: white;
 
 }
 
 .recherche i
 {
-    font-size: 1.5em;
-    border: 1px pink solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-align: center;
     height: 30px;
-    width: 20px;
+    width: 30px;
+    background-color: #ebebeb;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .filtres
 {
     display: flex;
     align-items: center;
-    border: 1px purple solid;
 }
 
 .filtres p
@@ -140,27 +148,38 @@ header
 {
     display: flex;
     flex-direction: row;
-    align-items: center;
     font-size: 0.8em;
     font-weight: bold;
-    border: 1px red solid;
+    width: 65%;
+}
+
+.bouton_filtres i
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #0065FC;
+    margin-right: 20px;
+    background-color:#DEEBFF ;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
 }
 
 .bouton_filtres li
 {
-    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    border: 2px #ebebeb solid;
+    border-left: none;
+    margin-right: 2%;
+    padding-right: 2%;
+    border-radius: 20px;    
 }
 
 .bouton_filtres li:hover
 {
-    background: rgb(31, 133, 222);
+    background: #0065FC;
     color: white;
     font-weight: bold;
-}
-
-.filtres i
-{
-    margin-right: 20px;
-    background-color: red ;
-    border-radius: 50%;
 }
