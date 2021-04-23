@@ -61,7 +61,7 @@ header
     justify-content: space-around;
     align-content: flex-start;
     padding-left: 0px;
-    width: 30%;
+    width: 100%;
 }
 
 #navigation li
