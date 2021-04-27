@@ -2,51 +2,46 @@
     font-family: 'ralewayregular';
     src: url('Fonts/ralewayregularwebfont.eot');
     src: url('Fonts/ralewayregularwebfont.eot?#iefix') format('embedded-opentype'),
-         url('Fonts/ralewayregularwebfont.woff2') format('woff2'),
-         url('Fonts/ralewayregularwebfont.woff') format('woff'),
-         url('Fonts/ralewayregularwebfont.ttf') format('truetype'),
-         url('Fonts/ralewayregularwebfont.svg#ralewayregular') format('svg');
+        url('Fonts/ralewayregularwebfont.woff2') format('woff2'),
+        url('Fonts/ralewayregularwebfont.woff') format('woff'),
+        url('Fonts/ralewayregularwebfont.ttf') format('truetype'),
+        url('Fonts/ralewayregularwebfont.svg#ralewayregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-body
-{
+body {
     font-family: "ralewayregular";
 }
 
-h1
-{
+h1 {
     font-size: 1em;
     font-weight: bold;
 }
 
-h2
-{
+h2 {
     font-size: 0.8em;
     font-weight: bold;
 }
 
-p
-{
+p {
     font-size: 0.7em;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-header
-{
+header {
     display: flex;
     flex-direction: row;
     height: 300%;
+    width: 100%;
     margin-right: 0px;
     padding-top: 5%;
 }
 
-#navigation
-{
+#navigation {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -54,8 +49,7 @@ header
     height: 20%;
 }
 
-#navigation ul
-{
+#navigation ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -64,8 +58,7 @@ header
     width: 100%;
 }
 
-#navigation li
-{
+#navigation li {
     font-size: 0.8em;
     padding-top: 10%;
     text-decoration: none;
@@ -73,36 +66,30 @@ header
     font-weight: bold;
 }
 
-#navigation a
-{
+#navigation a {
     color: black;
     text-decoration: none;
 }
 
-#navigation li:nth-child(1)
-{
+#navigation li:nth-child(1) {
     border-top: 1px solid;
     color: #0065FC;
 }
 
-#navigation a:visited
-{
+#navigation a:visited {
     color: #0065FC;
 }
 
-#logo_reservia
-{
-    width: 5%;
+#logo_reservia_svg {
+    width: 5rem;
 }
 
-#entete
-{
+#entete {
     align-self: flex-end;
-    width: 200%;
+    width: 100%;
 }
 
-.recherche
-{
+.recherche {
     display: flex;
     justify-content: flex-start;
     margin-right: 68%;
@@ -110,8 +97,7 @@ header
     border-radius: 10px 10px 10px 10px;
 }
 
-.bouton_rechercher
-{
+.bouton_rechercher {
     width: 100px;
     border-radius: 0px 10px 10px 0px;
     background-color: #0065fc;
@@ -119,13 +105,11 @@ header
 
 }
 
-input[type="submit"]
-{
+input[type="submit"] {
     cursor: pointer;
 }
 
-.recherche i
-{
+.recherche i {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,55 +121,72 @@ input[type="submit"]
     border-radius: 10px 0px 0px 10px;
 }
 
-.filtres
-{
+.filtres {
     display: flex;
+    width: 100%;
     align-items: center;
 }
 
-.filtres p
-{
+.filtres p {
     font-weight: bold;
     font-size: 0.8em;
 }
 
-.bouton_filtres
-{
+.bouton_filtres {
     display: flex;
     flex-direction: row;
     font-size: 0.8em;
     font-weight: bold;
-    width: 65%;
+    width: 100%;
+    border: 1px red solid;
 }
 
-.bouton_filtres i
-{
+.bouton_filtres i {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;    
     color: #0065FC;
     margin-right: 20px;
-    background-color:#DEEBFF ;
+    background-color: #DEEBFF;
     border-radius: 50%;
     height: 30px;
     width: 30px;
 }
 
-.bouton_filtres li
-{
+.bouton_filtres li {
     display: flex;
-    align-items: center;
+    align-items: center;     
     border: 2px #ebebeb solid;
     border-left: none;
     margin-right: 2%;
     padding-right: 2%;
     border-radius: 20px;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
-.bouton_filtres li:hover
-{
+.bouton_filtres li:hover {
     background: #0065FC;
     color: white;
     font-weight: bold;
+}
+
+@media screen and (max-device-width: 480px) {
+    header{
+        display: flex;
+    }
+    
+    #navigation{
+        position: relative;
+        flex-wrap: wrap-reverse;
+    }
+    
+    .filtres{
+        width: 25%;
+        flex-wrap: wrap;
+    }
+
+    .bouton_filtres {
+        flex-wrap: wrap;
+    }  
+
 }
