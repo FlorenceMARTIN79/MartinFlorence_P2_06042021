@@ -15,8 +15,9 @@
 }
 
 body {
-    font-family: "ralewayregular";
+    font-family: "ralewayregular", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
     margin: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -42,11 +43,13 @@ ul {
     list-style-type: none;
 }
 
+/*Mise en page du HEADER*/
 .header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
-    margin: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
     padding-top: 5%;
 }
 
@@ -73,6 +76,8 @@ ul {
     color: #0065FC;
     font-weight: bold;
     padding: 3em 1.5em 1em 1.5em;
+    margin-right: 0;
+    padding-right: 0;
 }
 
 #navigation a {
@@ -98,11 +103,6 @@ ul {
     width: 5rem;
 }
 
-#entete {
-    align-self: flex-end;
-    width: 100%;
-}
-
 .recherche {
     display: flex;
     justify-content: flex-start;
@@ -116,7 +116,6 @@ ul {
     border-radius: 0px 10px 10px 0px;
     background-color: #0065fc;
     color: white;
-
 }
 
 input[type="submit"] {
@@ -133,6 +132,15 @@ input[type="submit"] {
     width: 30px;
     background-color: #ebebeb;
     border-radius: 10px 0px 0px 10px;
+}
+
+#lieu {
+    border: 1px #ebebeb solid;
+    font-family: "ralewayregular", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+}
+
+#lieu:focus-visible {
+    outline: none;
 }
 
 .filtres {
@@ -152,7 +160,6 @@ input[type="submit"] {
     font-size: 0.8em;
     font-weight: bold;
     width: 100%;
-    border: 1px red solid;
 }
 
 .bouton_filtres i {
@@ -184,12 +191,47 @@ input[type="submit"] {
     font-weight: bold;
 }
 
-.bouton_filtres li:nth-child(4){
+.bouton_filtres li:nth-child(4) {
     white-space: nowrap;
 }
 
+/*Mise en page du MAIN*/
 .main {
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#articleHebergements {
+    display: flex;
+    flex-direction: column;
+    border: 1px blue solid;
+    background-color: #F2F2F2;
+    height: 80%;
+    padding: 2%;
+}
+
+#resultatHebergements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+#resultatHebergements a {
+    border: 1px red solid;
+    display: block;
+    width: 30%;
+    height: 40%;
+    margin: auto;
+    margin-left: 0;
+}
+
+.photoshebergements{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
 }
 
 .footer {
@@ -203,8 +245,9 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 480px) {
-    header {
+    .header {
         display: flex;
+        flex-direction: column;
     }
 
     #navigation {
@@ -232,6 +275,7 @@ input[type="submit"] {
         flex-wrap: wrap;
     }
 
+    /*Mise en page du FOOTER*/
     .footer {
         flex-direction: column;
     }
