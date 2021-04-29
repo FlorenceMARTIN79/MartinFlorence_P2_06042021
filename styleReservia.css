@@ -25,17 +25,17 @@ body {
 
 }
 
-h1 {
+.titre1em {
     font-size: 1em;
     font-weight: bold;
 }
 
-h2 {
+.titre08em {
     font-size: 0.8em;
     font-weight: bold;
 }
 
-p {
+.paragraphe {
     font-size: 0.7em;
 }
 
@@ -53,10 +53,12 @@ ul {
     padding-top: 5%;
 }
 
+#entete{
+    display: flex;
+    justify-content: space-between;
+}
+
 #navigation {
-    position: absolute;
-    top: 0px;
-    right: 0px;
     width: 30%;
     height: 20%;
 }
@@ -149,7 +151,7 @@ input[type="submit"] {
     align-items: center;
 }
 
-.filtres p {
+.filtres h2 {
     font-weight: bold;
     font-size: 0.8em;
 }
@@ -207,7 +209,7 @@ input[type="submit"] {
     flex-direction: column;
     border: 1px blue solid;
     background-color: #F2F2F2;
-    height: 80%;
+    height: 100%;
     padding: 2%;
 }
 
