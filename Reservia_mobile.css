@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+#navigation {
+    position: static;
+}
+
+#navigation ul {
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    background: grey;
+    width: 100%;
+}
+
+#navigation li:nth-child(1) {
+    border-top: none;
+    border-bottom: 1px solid;
+}
+
+.filtres {
+    width: 25%;
+    flex-wrap: wrap;
+}
+
+.bouton_filtres {
+    flex-wrap: wrap;
+}
+
+/*Mise en page du FOOTER*/
+.footer {
+    flex-direction: column;
+}
+
