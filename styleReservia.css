@@ -85,8 +85,6 @@ ul {
     align-items: flex-end;
     font-size: 0.9em;
     text-decoration: none;
-    /*color: #0065FC;*/
-    /*color: black;*/
     font-weight: bold;
     padding: 0em 1.5em 0em 1.5em;
     height: 4em;
@@ -160,7 +158,7 @@ input[type="submit"] {
     align-items: center;
 }
 
-.filtres h2 {
+.filtres p {
     font-weight: bold;
     font-size: 0.8em;
 }
@@ -172,7 +170,6 @@ input[type="submit"] {
     font-weight: bold;
     width: 100%;
 }
-
 .bouton_filtres i {
     display: flex;
     justify-content: space-around;
@@ -184,7 +181,6 @@ input[type="submit"] {
     height: 30px;
     width: 30px;
 }
-
 .bouton_filtres li {
     display: flex;
     align-items: center;
@@ -195,13 +191,11 @@ input[type="submit"] {
     border-radius: 20px;
     cursor: pointer;
 }
-
 .bouton_filtres li:hover {
     background: #0065FC;
     color: white;
     font-weight: bold;
 }
-
 .bouton_filtres li:nth-child(4) {
     white-space: nowrap;
 }

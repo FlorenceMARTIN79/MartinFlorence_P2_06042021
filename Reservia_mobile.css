@@ -1,22 +1,46 @@
+body {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
 .header {
     display: flex;
     flex-direction: column;
 }
 
+#entete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    border: 1px red solid;
+    margin-top: 20px;
+}
+
+#logo_reservia_svg {
+    width:4em;
+}
+
 #navigation {
-    position: static;
+    display: flex;
+    border: 2px blue solid;
 }
 
 #navigation ul {
     flex-wrap: wrap-reverse;
     justify-content: flex-end;
-    background: grey;
-    width: 100%;
+    border: 1px green solid;
 }
 
-#navigation li:nth-child(1) {
-    border-top: none;
-    border-bottom: 1px solid;
+#navigation li {
+    width: 50%;
+    border: 2px orange solid;
+    align-items: center;
+}
+
+#navigation a {
+    border: 2px darkorchid solid;
+    align-items: center;   
 }
 
 .filtres {
