@@ -18,27 +18,32 @@
                 <ul>
                     <li><a href="#ancre_hebergement" id="nav_hebergements">Hébergements</a></li>
                     <li><a href="#ancre_activite" id="nav_activite">Activités</a></li>
-                    <li>S'inscrire</li>
+                    <li class="inscription">
+                        <p>S'inscrire</p>
+                    </li>
                 </ul>
             </nav>
         </div>
-        <h1 class="titre1em">Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p class="paragraphe">En plein centre ville ou en pleine nature</p>
-        <form method="post" action="page_fictive.php">
-            <p class="recherche">
-                <label for="lieu"><i class="fas fa-map-marker-alt"></i></label>
-                <input type="search" name="lieu" id="lieu" placeholder="Marseille, France" autofocus />
-                <input type="submit" disabled value="Rechercher" class="bouton_rechercher" />
-            </p>
-        </form>
-        <div class="filtres">
-            <p class="titre08em">Filtres</p>
-            <ul class="bouton_filtres">
-                <li><i class="fas fa-money-bill-wave"></i>Économique</li>
-                <li><i class="fas fa-child"></i>Familial</li>
-                <li><i class="fas fa-heart"></i>Romantique</li>
-                <li><i class="fas fa-dog"></i>Animaux autorisés</li>
-            </ul>
+        <div id="suiteheader">
+            <h1 class="titre1em">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p class="paragraphe">En plein centre ville ou en pleine nature</p>
+            <form method="post" action="page_fictive.php">
+                <p class="recherche">
+                    <label for="lieu"><i class="fas fa-map-marker-alt"></i></label>
+                    <input type="search" name="lieu" id="lieu" placeholder="Marseille, France" autofocus />
+                    <input type="submit" disabled value="Rechercher" class="bouton_rechercher" />
+                    <button type="submit" disabled value="" class="loupe"><i class="fas fa-search"></i></button>
+                </p>
+            </form>
+            <div class="filtres">
+                <p class="titre08em">Filtres</p>
+                <ul class="bouton_filtres">
+                    <li><i class="fas fa-money-bill-wave"></i>Économique</li>
+                    <li><i class="fas fa-child"></i>Familial</li>
+                    <li><i class="fas fa-heart"></i>Romantique</li>
+                    <li><i class="fas fa-dog"></i>Animaux autorisés</li>
+                </ul>
+            </div>
         </div>
     </header>
 
