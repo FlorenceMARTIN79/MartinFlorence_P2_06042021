@@ -19,7 +19,9 @@ body {
     justify-content: space-between;
     align-items: baseline;
     margin-top: 20px;
+    padding-right: 0;
     height: 7em;
+    width: 100%;
 }
 
 #logo_reservia_svg {
@@ -42,7 +44,7 @@ body {
     justify-content: flex-end;
     margin: 0;
     height: 100%;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 #navigation li {
@@ -51,36 +53,29 @@ body {
     justify-content: flex-end;
     align-items: center;
     padding: 0;
-    padding-right: 1.5em;
     height: 100%;
-    border-bottom: 2px #f2f2f2 solid;
 }
 
 #navigation .inscription {
     border-bottom: none;
-    padding-right: 0.5em;
+    padding-right: 1.5em;
 }
 
 #navigation a {
-    justify-content: /*flex-start*/center;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    padding-left: 30%;
     font-weight: normal;
+    border-bottom: 2px #f2f2f2 solid;
 }
 
 #navigation p {
     align-self: center;
-    /*padding-right: 0.5em;*/
-}
-
-#navigation li:hover {
-    border-bottom: 2px #0065FC solid;
-    border-top: none;
-    color: #0065FC;
 }
 
 #navigation a:hover {
+    border-bottom: 2px #0065FC solid;
+    border-top: none;
     color: #0065FC;
     font-weight: bold;
 }
