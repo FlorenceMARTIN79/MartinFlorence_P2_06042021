@@ -20,7 +20,7 @@ body {
     display: flex;
     font-family: "ralewayregular", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
     margin: 0;
-    padding-left: 50px;
+    /*padding-left: 50px;*/
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,12 @@ body {
 }
 
 #blocpage {
-    max-width: 1390px;
+    max-width: 1440px;
+}
+
+.header, .main {
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 .titre1em {
@@ -63,7 +68,6 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-right: 3.5%;
 }
 
 #logo_reservia_svg {
@@ -274,26 +278,38 @@ button[type="submit"] {
     padding-left: 0.5em;
 }
 
+h2[class="titre1em"] {
+    margin-bottom: 1.6em;
+}
+
 /*Mise en page des HEBERGEMENTS*/
+#DIV_HEBERGEMENTS {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 650px;
+}
+
 [id^=HEBERGEMENT]{
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    padding: 4%;
+    padding: 3.5% 4% 4% 2.7%;
     border-radius: 15px;
 }
+
 [id^=HEBERGEMENT] h2 {
-    margin-top: 0.5em;
+    margin-top: 0;
+    margin-bottom: 1.6em;
 }
 
 [id^=vignette] {
     background-color: white;
-    border: 2px purple solid;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 28%;
-    height: 10rem;
+    /*height: 10rem;*/
     text-decoration: none;
     color: black;
     padding: 0.2em;
@@ -329,20 +345,47 @@ button[type="submit"] {
 }
 
 /*Mise en page de l'article Hébergements*/
+#HEBERGEMENT_article {
+    width: 55em;
+    min-width: 55em;
+    height: 100%;
+}
+
 #resultatHebergements {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    /*height: 60%;*/
+    height: 80%;
+}
+
+#resultatHebergements a{
+    /*margin-bottom: 1em;*/
+    width: 32%;
+    height: 45%;
 }
 
 .photoshebergements {
     max-width: 100%;
-    height: 60%;
+    height: 57%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
+}
+
+.comment_vignettehebergements {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    padding-left: 0.7em;
+}
+
+.texte_vignetteHebergements {
+    display: flex; 
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
 }
 
 #HEBERGEMENT_article .titre08em {
@@ -353,12 +396,18 @@ button[type="submit"] {
 }
 
 /*Mise en page de l'aside Les plus populaires*/
+#HEBERGEMENT_aside {
+    width: 26em;
+    min-width: 26em;
+    height: 100%;
+}
+
 #entete_populaires {
     display: flex;
-    border: 1px red solid;
     justify-content: space-between;
-    align-items: center;
-    height: 4em;
+    align-items: baseline;
+    height: 2.43em;
+    margin-bottom: 1.6em;
 }
 
 #entete_populaires h2 {
@@ -368,27 +417,36 @@ button[type="submit"] {
 #resultatPopulaires {
     display: flex; 
     flex-direction : column;
-    justify-content: space-evenly;
-    border: 1px blue solid;
+    justify-content: space-between;
+    height: 100%;
 }
 
 #resultatPopulaires a{
     display: flex;
     flex-direction: row;
-    /*height: 25%;*/
+    width: 100%;
+    height: 30%;
 }
 
 .comment_vignettepopulaires {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-right: 10%;
+    padding-left: 5%;
 }
 
 #resultatPopulaires img {
-    width: 30%;
+    width: 39%;
     border-radius: 15px 0 0 15px;
-    /*object-fit: cover;*/
+    object-fit: cover;
 }
+
+/*Mise en page des activités*/
+#ACTIVITE_article {
+    border: 1px red solid;
+}
+
 
 /*Mise en page du footer*/
 .footer {

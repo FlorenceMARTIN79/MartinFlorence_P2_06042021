@@ -81,17 +81,11 @@ body {
 }
 
 /*mise en page de #suiteheader du header en responsive*/
-#suiteheader {
-    padding-left: 1.5em;
-    padding-right: 0.5em;
-    padding-top: 1.2em;
-}
-
 #suiteheader .titre1em {
     font-size: 1.45em;
     font-weight: bold;
     margin-bottom: 0.5em;
-    padding-right: 0.5em;
+    margin-top: 0.5em;
 }
 
 #suiteheader .paragraphe {
@@ -107,7 +101,11 @@ body {
 }
 
 .recherche label {
-    width: 15%;
+    width: 3.5em;
+    position: absolute;
+    left: 0;
+    z-index:2;
+    height: 100%;
 }
 
 .recherche i{
@@ -117,24 +115,35 @@ body {
 }
 
 #lieu {
-    width: 70%;
     border-right: none;
     font-size: 1.2em;
     font-weight: bold;
     padding-left: 5%;
+    position: absolute;
+    right:0;
+    left: 2.9em;
+    height: 100%;
+    padding-right: 2em;
 }
 
 .bouton_rechercher {
     display: none;
 }
 
+.recherche {
+    position: relative;
+}
+
 .loupe {
     display: block;
-    width: 15%;
+    width: 4.2em;
+    height: 3.8em;
     border-radius: 15px 15px 15px 15px;
     background-color: #0065fc;
     color: white;
     cursor: pointer;
+    position: absolute;
+    right: 0;
 }
 
 .loupe i {
@@ -143,8 +152,7 @@ body {
     align-items: center;
     font-size: 1.2em;
     text-align: center;
-    height: 30px;
-    width: 30px;
+    margin-right: 0;
     background: none;
     border-radius: 0;
 }
@@ -161,6 +169,7 @@ body {
 .bouton_filtres {
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     font-size: 0.9em;
     font-weight: bold;
     height: auto;
@@ -170,16 +179,70 @@ body {
 
 .bouton_filtres li{
     height: 3.2em;
-    padding-right: 0;
+    padding-right: 0.5em;
     margin-right: 0;
+    margin-top: 0.5em;
+}
+
+.bouton_filtres i {
+    margin-right: 0.5em;
 }
 
 /*Mise en page du main*/
 .main {
-    padding-left: 1.5em;
-    padding-right: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .main, .footer {
+    padding: 0 5% 0 5%;;
+    padding-left: 
+}
+
+#entete {
+    margin-top: 0;
+}
+
+#logo_reservia_svg {
+    padding: 0;
+}
+
+#DIV_HEBERGEMENTS {
     display: flex;
     flex-direction: column-reverse;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 480px;
+    height: 100%;
+}
+
+#HEBERGEMENT_article {
+    width: 100%;
+    min-width: 100%;
+    max-width: 480px;
+}
+
+#HEBERGEMENT_aside {
+    width: 100%;
+    min-width: 100%;
+    max-width: 480px;
+}
+
+[id^=vignette] {
+    width: 100%;
+    height: 10rem;
+    padding: 0.2em;
+    border-radius: 15px;
+}
+
+#resultatHebergements {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#resultatHebergements a {
+    width: 100%;   
 }
 
 /*Mise en page du FOOTER*/
