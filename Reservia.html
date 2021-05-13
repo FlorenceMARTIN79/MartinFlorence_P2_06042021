@@ -14,14 +14,12 @@
     <div id="blocpage">
         <header class="header">
             <div id="entete">
-                <img src="images/logo/Reservia.svg" alt="logo du site" id="logo_reservia_svg" />
+                <div><img src="images/logo/Reservia.svg" alt="logo du site" id="logo_reservia_svg" /></div>
                 <nav id="navigation">
                     <ul>
                         <li><a href="#ancre_hebergement" id="nav_hebergements">Hébergements</a></li>
                         <li><a href="#ancre_activite" id="nav_activite">Activités</a></li>
-                        <li class="inscription">
-                            <p>S'inscrire</p>
-                        </li>
+                        <li class="inscription"><a href="#" id="DIV_inscription">S'inscrire</a></li>
                     </ul>
                 </nav>
             </div>
@@ -71,7 +69,7 @@
                                 --><i class="fas fa-star"></i><!-- @whitespace
                                 --><i class="fas fa-star"></i><!-- @whitespace
                                 --><i class="fas fa-star"></i><!-- @whitespace
-                                --><i class="fas fa-star" id="greystar"></i>
+                                --><div class="greystar"><i class="fas fa-star"></i></div>
                             </div>
                         </div>
                     </a>
@@ -105,7 +103,7 @@
                                 --><i class="fas fa-star"></i><!-- @whitespace
                                 --><i class="fas fa-star"></i><!-- @whitespace
                                 --><i class="fas fa-star"></i><!-- @whitespace
-                                --><i class="fas fa-star" id="greystar"></i>
+                                --><div class="greystar"><i class="fas fa-star"></i></div>
                             </div>
                         </div>
                     </a>
@@ -121,8 +119,8 @@
                                 <i class="fas fa-star"></i><!-- @whitespace
                                 --><i class="fas fa-star"></i><!-- @whitespace
                                 --><i class="fas fa-star"></i><!-- @whitespace
-                                --><i class="fas fa-star" id="greystar"></i><!-- @whitespace
-                                --><i class="fas fa-star" id="greystar"></i>
+                                --><div class="greystar"><i class="fas fa-star"></i></div><!-- @whitespace
+                                --><div class="greystar"><i class="fas fa-star"></i></div>
                             </div>
                         </div>
                     </a>
@@ -139,7 +137,7 @@
                                 --><i class="fas fa-star"></i><!-- @whitespace
                                 --><i class="fas fa-star"></i><!-- @whitespace
                                 --><i class="fas fa-star"></i><!-- @whitespace
-                                --><i class="fas fa-star" id="greystar"></i>
+                                --><div class="greystar"><i class="fas fa-star"></i></div>
                             </div>
                         </div>
                     </a>
@@ -161,7 +159,7 @@
                         </div>
                     </a>
                 </section>
-                <a href="#"" class="titre08em">Afficher plus</a>
+                <a href="#" class="titre08em">Afficher plus</a>
             </article>
 
             <aside id="HEBERGEMENT_aside">
@@ -198,7 +196,7 @@
                                 --><i class="fas fa-star"></i><!-- @whitespace
                                 --><i class="fas fa-star"></i><!-- @whitespace
                                 --><i class="fas fa-star"></i><!-- @whitespace
-                                --><i class="fas fa-star" id="greystar"></i>
+                                --><div class="greystar"><i class="fas fa-star"></i></div>
                             </div>
                         </div>
                     </a>                        
@@ -214,7 +212,7 @@
                                 --><i class="fas fa-star"></i><!-- @whitespace
                                 --><i class="fas fa-star"></i><!-- @whitespace
                                 --><i class="fas fa-star"></i><!-- @whitespace
-                                --><i class="fas fa-star" id="greystar"></i>
+                                --><div class="greystar"><i class="fas fa-star"></i></div>
                             </div>
                         </div>
                     </a>
@@ -235,25 +233,32 @@
         </main>
 
         <footer class="footer">
-            <div id="APropos">
-                <h3 class="titre08em">A propos</h3>
-                <p class="paragraphe">Fonctionnement du site</p>
-                <p class="paragraphe">Conditions générales de vente</p>
-                <p class="paragraphe">Données et confidentialité</p>
-            </div>
+            <div id="contenu_footer">
+                <div id="APropos">
+                    <h3 class="titre08em">A propos</h3>
+                    <ul>
+                        <li class="paragraphe"><a href="#">Fonctionnement du site</a></li>
+                        <li class="paragraphe"><a href="#">Conditions générales de vente</a></li>
+                        <li class="paragraphe"><a href="#">Données et confidentialité</a></li>
+                    </ul>
+                </div>
 
-            <div id="NosHebergements">
-                <h3 class="titre08em">Nos hébergements</h3>
-                <p class="paragraphe">Charte qualité</p>
-                <p class="paragraphe">Soumettre votre hôtel</p>
-            </div>
+                <div id="NosHebergements">
+                    <h3 class="titre08em">Nos hébergements</h3>
+                    <ul>
+                        <li class="paragraphe"><a href="#">Charte qualité</a></li>
+                        <li class="paragraphe"><a href="#">Soumettre votre hôtel</a></li>
+                    </ul>    
+                </div>
 
-            <div id="Assistance">
-                <h3 class="titre08em">Assistance</h3>
-                <p class="paragraphe">Centre d'aide</p>
-                <p class="paragraphe">Nous contacter</p>
+                <div id="Assistance">
+                    <h3 class="titre08em">Assistance</h3>
+                    <ul>
+                        <li class="paragraphe"><a href="#">Centre d'aide</a></li>
+                        <li class="paragraphe"><a href="#">Nous contacter</a></li>
+                    </ul>
+                </div>
             </div>
-
         </footer>
 
     </div>

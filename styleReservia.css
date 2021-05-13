@@ -56,6 +56,10 @@ ul {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*Mise en page du HEADER*/
 .header {
     display: flex;
@@ -116,9 +120,8 @@ ul {
     padding: 0em 1.5em 0em 1.5em;
 }
 
-#navigation p {
-    align-self: flex-end;
-    margin: 0;
+#navigation a:nth_child(3) {
+    color: #0065FC;
 }
 
 #navigation a:hover {
@@ -334,11 +337,12 @@ h2[class="titre1em"] {
     margin-left: 0.2em;
 }
 
-#greystar {
+.greystar {
     color:#F2F2F2;
 }
 
 .stars {
+    display: flex;
     margin: 0;
     font-size: 0.7em;
     color: #0065FC;
@@ -454,7 +458,37 @@ h2[class="titre1em"] {
     padding: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: auto;
     flex: none;
+    height: 15%;
+}
+
+#contenu_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#contenu_footer h3 {
+    font-size: 1em;
+}
+
+.footer ul {
+    padding-left: 0;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-size: 1em;
+}
+
+.footer a {
+    display: block;
+    color: black;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
