@@ -19,7 +19,7 @@ body {
     padding: 0;
 }
 
-#suiteheader {
+#suite_header {
     padding: 0 5% 0 5%;
 }
 
@@ -97,15 +97,15 @@ body {
     align-self: flex-end;
 }*/
 
-/*mise en page de #suiteheader du header en responsive*/
-#suiteheader .titre1em {
+/*mise en page de #suite_header du header en responsive*/
+#suite_header .titre1em {
     font-size: 1.45em;
     font-weight: bold;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
 
-#suiteheader .paragraphe {
+#suite_header .paragraphe {
     font-size: 1.03em;
     margin-top: 0;
 }
@@ -219,7 +219,7 @@ body {
     padding: 0;
 }
 
-#DIV_HEBERGEMENTS {
+#div_accomodations {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -228,13 +228,13 @@ body {
     height: 100%;
 }
 
-#HEBERGEMENT_article {
+#hebergement_article {
     width: 100%;
     min-width: 100%;
     max-width: 480px;
 }
 
-#HEBERGEMENT_aside {
+#hebergement_aside {
     width: 100%;
     min-width: 100%;
     max-width: 480px;
@@ -247,13 +247,13 @@ body {
     border-radius: 15px;
 }
 
-#resultatHebergements {
+#resultat_hebergements {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
 }
 
-#resultatHebergements a {
+#resultat_hebergements a {
     width: 100%;   
 }
 

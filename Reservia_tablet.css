@@ -1,0 +1,13 @@
+#div_accomodations {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+#hebergement_article {
+    width: 100%;
+}
+
+#hebergement_aside {
+    width: 100%;
+}

@@ -28,9 +28,9 @@ body {
     height: 900px;
 }
 
-#blocpage {
+/*#blocpage {
     max-width: 1440px;
-}
+}*/
 
 .header, .main {
     padding-right: 50px;
@@ -285,15 +285,15 @@ h2[class="titre1em"] {
     margin-bottom: 1.6em;
 }
 
-/*Mise en page des HEBERGEMENTS*/
-#DIV_HEBERGEMENTS {
+/*Mise en page des hebergements*/
+#div_accomodations {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 650px;
 }
 
-[id^=HEBERGEMENT]{
+[id^=hebergement]{
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
@@ -301,7 +301,7 @@ h2[class="titre1em"] {
     border-radius: 15px;
 }
 
-[id^=HEBERGEMENT] h2 {
+[id^=hebergement] h2 {
     margin-top: 0;
     margin-bottom: 1.6em;
 }
@@ -349,13 +349,13 @@ h2[class="titre1em"] {
 }
 
 /*Mise en page de l'article Hébergements*/
-#HEBERGEMENT_article {
-    width: 55em;
-    min-width: 55em;
+#hebergement_article {
+    width: /*55em*/60%;
+    min-width: /*55em*/60%;
     height: 100%;
 }
 
-#resultatHebergements {
+#resultat_hebergements {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -364,35 +364,35 @@ h2[class="titre1em"] {
     height: 80%;
 }
 
-#resultatHebergements a{
+#resultat_hebergements a{
     /*margin-bottom: 1em;*/
     width: 32%;
     height: 45%;
 }
 
-.photoshebergements {
+.photos_hebergements {
     max-width: 100%;
-    height: 57%;
+    height: 45%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
 
-.comment_vignettehebergements {
+.comment_vignette_hebergements {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 40%;
     justify-content: space-evenly;
     padding-left: 0.7em;
 }
 
-.texte_vignetteHebergements {
+.texte_vignette_hebergements {
     display: flex; 
     flex-direction: column;
     height: 100%;
     justify-content: space-evenly;
 }
 
-#HEBERGEMENT_article .titre08em {
+#hebergement_article .titre08em {
     font-size: 1.2rem;
     color: black;
     text-decoration: none;
@@ -400,9 +400,9 @@ h2[class="titre1em"] {
 }
 
 /*Mise en page de l'aside Les plus populaires*/
-#HEBERGEMENT_aside {
-    width: 26em;
-    min-width: 26em;
+#hebergement_aside {
+    width: /*26em*/30%;
+    min-width: /*26em*/30%;
     height: 100%;
 }
 
@@ -418,21 +418,21 @@ h2[class="titre1em"] {
     margin: 0;
 }
 
-#resultatPopulaires {
+#resultat_populaires {
     display: flex; 
     flex-direction : column;
     justify-content: space-between;
     height: 100%;
 }
 
-#resultatPopulaires a{
+#resultat_populaires a{
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 30%;
 }
 
-.comment_vignettepopulaires {
+.comment_vignette_populaires {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -440,14 +440,14 @@ h2[class="titre1em"] {
     padding-left: 5%;
 }
 
-#resultatPopulaires img {
+#resultat_populaires img {
     width: 39%;
     border-radius: 15px 0 0 15px;
     object-fit: cover;
 }
 
 /*Mise en page des activités*/
-#ACTIVITE_article {
+#activite_article {
     border: 1px red solid;
 }
 
