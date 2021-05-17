@@ -1,13 +1,131 @@
-#div_accomodations {
+body {
     display: flex;
     flex-direction: column;
+    width: auto;
+}
+
+.header, .footer {
+    padding: 0 1rem 0 1rem;
+}
+
+.main {
+    padding: 0;
+}
+
+/*Mise en page responsive tablette du header*/
+
+/*Mise en page responsive tablette du menu*/
+
+#navigation li {
+    font-size: 1em;
+}
+
+.list_filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.btn_filter {
+    margin-top: 1em;
+    margin-right: 2rem;
+}
+
+/*Mise en page responsive tablette main*/
+
+[id^=hebergement], #result_no_accomodation {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#result_no_accomodation {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+#div_accomodations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     height: auto;
 }
 
+#resultat_hebergement {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65vw;
+}
+
+[id^=hebergement]{
+    margin-top: 1rem;
+    border-radius: 0;
+}
+
+[id^=vignette] {
+    width: auto;
+    height: 10rem;
+}
+
 #hebergement_article {
-    width: 100%;
+    /*width: 100%;*/
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    
+}
+
+#hebergement_article a {
+    width: 50%;
+    background-color: #DEEBFF;
 }
 
 #hebergement_aside {
+   /*width: 100%;*/
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 34vw;
+    background-color: #F2F2F2;
+}
+
+#resultat_populaires {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+#resultat_populaires a {
+    flex-direction: column;
     width: 100%;
+    height: 30%;
+}
+
+#resultat_populaires img {
+    width: auto;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.photos_populaires {
+    max-width: 100%;
+    height: 55%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.comment_vignette_populaires {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    justify-content: space-evenly;
+    padding-left: 0.7em;
+}
+
+.texte_vignette_populaires {
+    display: flex; 
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
 }
