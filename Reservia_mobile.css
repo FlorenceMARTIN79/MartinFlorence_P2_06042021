@@ -3,10 +3,9 @@ body {
     padding-right: 0em;
 }
 
-.main, .footer {
+/*.main, .footer {
     padding: 0 5% 0 5%;
-}
-
+}*/
 
 .titre1em {
     font-size: 1.5em;
@@ -28,20 +27,18 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: baseline;
-    margin-top: 20px;
     padding-right: 0;
-    height: 7em;
     width: 100%;
 }
 
 #entete div {
-    padding-left: 1.5em;
-    
+    padding-left: 1.5rem;
 }
 
 #logo_reservia_svg {
     object-fit: contain;
-    padding-left: 1.5em;
+    padding-top: 1.5rem;
+    height: 100%
 }
 
 #navigation {
@@ -57,7 +54,7 @@ body {
     justify-content: flex-end;
     margin: 0;
     height: 100%;
-    font-size: 1em;
+    font-size: 1rem;
     padding-right: 0;
 }
 
@@ -70,14 +67,24 @@ body {
     height: 100%;
 }
 
-
-
 #navigation a {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-bottom: 1.5rem;
     font-weight: normal;
     border-bottom: 2px #f2f2f2 solid;
+}
+
+.inscription #div_inscription {
+    border-bottom: none;
+    padding-right: 0;
+    justify-content: flex-end;
+    padding-right: 1.5rem;
+    align-items: flex-end;
+    color: #0065FC;
+    font-weight: bold;
+    padding-bottom: 1rem;
 }
 
 #navigation a:hover {
@@ -87,15 +94,16 @@ body {
     font-weight: bold;
 }
 
+#navigation a:focus {
+    border-top: none;
+    border-bottom: 2px #0065FC solid;
+    font-weight: bold;
+}
+
 #navigation .inscription {
     border-bottom: none;
     padding-right: 0;
 }
-
-/*#navigation li:nth-child(3) {
-    padding-right: 0;
-    align-self: flex-end;
-}*/
 
 /*mise en page de #suite_header du header en responsive*/
 #suite_header .titre1em {
@@ -153,8 +161,8 @@ body {
 
 .loupe {
     display: block;
-    width: 4.2em;
-    height: 3.8em;
+    width: 3.3rem;
+    height: 3.2em;
     border-radius: 15px 15px 15px 15px;
     background-color: #0065fc;
     color: white;
@@ -175,12 +183,12 @@ body {
 }
 
 .filtres {
-    /*width: 25%;*/
     flex-wrap: wrap;
 }
 
 .filtres p {
     font-size: 1.2em;
+    margin-bottom: 0;
 }
 
 .list_filters {
@@ -203,20 +211,25 @@ body {
 
 .list_filters i {
     margin-right: 0.5em;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 /*Mise en page du main*/
 .main {
     display: flex;
     flex-direction: column;
+    margin-top: 2rem;
 }
 
-#entete {
-    margin-top: 0;
+#result_no_accomodation {
+    margin-left: 0;
+    margin-bottom: 1rem;
+    padding: 0 5% 0 5%;
 }
 
-#logo_reservia_svg {
-    padding: 0;
+#logo_info {
+    width: 2.5rem;
 }
 
 #div_accomodations {
@@ -232,12 +245,15 @@ body {
     width: 100%;
     min-width: 100%;
     max-width: 480px;
+    padding: 0 5% 0 5%;
 }
 
 #hebergement_aside {
     width: 100%;
     min-width: 100%;
     max-width: 480px;
+    background-color: #F2F2F2;
+    padding-bottom: 3rem;
 }
 
 [id^=vignette] {
@@ -254,7 +270,34 @@ body {
 }
 
 #resultat_hebergements a {
-    width: 100%;   
+    width: 100%;
+}
+
+#resultat_populaires a{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+}
+
+.comment_vignette_populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 60%;
+    padding-right: 10%;
+    padding-left: 5%;
+}
+.texte_vignette_populaires {
+    height: auto; 
+}
+
+#resultat_populaires img {
+    width: 39%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
 }
 
 /*Mise en page du FOOTER*/

@@ -71,6 +71,10 @@ body {
     margin-bottom: 2rem;
 }
 
+#hebergement_article .greystar {
+    color: white;
+}
+
 #hebergement_article .titre1em {
     margin-top: 0;
     margin-bottom: 1.6em;
@@ -157,6 +161,11 @@ body {
 
 #contenu_footer {
     padding: 0;
+    flex-wrap: wrap;
+}
+
+#contenu_footer div {
+    min-width: 240px;
 }
 
 #contenu_footer a {
