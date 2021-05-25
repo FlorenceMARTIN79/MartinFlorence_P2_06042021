@@ -129,11 +129,11 @@ body {
     width: 3.5em;
     position: absolute;
     left: 0;
-    z-index:2;
+    z-index: 2;
     height: 100%;
 }
 
-.recherche i{
+.recherche i {
     height: 100%;
     margin-bottom: 0;
     width: 100%;
@@ -145,7 +145,7 @@ body {
     font-weight: bold;
     padding-left: 5%;
     position: absolute;
-    right:0;
+    right: 0;
     left: 2.9em;
     height: 100%;
     padding-right: 2em;
@@ -202,7 +202,7 @@ body {
     margin-top: 0;
 }
 
-.list_filters li{
+.list_filters li {
     height: 3.2em;
     padding-right: 0.5em;
     margin-right: 0;
@@ -273,7 +273,7 @@ body {
     width: 100%;
 }
 
-#resultat_populaires a{
+#resultat_populaires a {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -289,8 +289,9 @@ body {
     padding-right: 10%;
     padding-left: 5%;
 }
+
 .texte_vignette_populaires {
-    height: auto; 
+    height: auto;
 }
 
 #resultat_populaires img {
@@ -300,11 +301,15 @@ body {
     object-fit: cover;
 }
 
+/*Mise en page Activités*/
+#activite_article div{
+    flex-direction: column;
+    width: 100%;
+}
+
 /*Mise en page du FOOTER*/
 #contenu_footer {
     display: flex;
     flex-direction: column;
     padding: 0;
 }
-
-
