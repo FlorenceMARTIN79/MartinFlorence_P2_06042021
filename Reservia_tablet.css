@@ -24,8 +24,6 @@ body {
 .list_filters {
     display: flex;
     flex-wrap: wrap;
-    margin-block-start: 0;
-    margin-block-end: 0;
 }
 
 .btn_filter {
@@ -34,12 +32,6 @@ body {
 }
 
 /*Mise en page responsive tablette main*/
-
-/*[id^=hebergement], #result_no_accomodation {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}*/
-
 #result_no_accomodation {
     margin-top: 1rem;
     margin-bottom: 0;
@@ -57,7 +49,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /*width: 65vw;*/
     height: auto;
 }
 
@@ -83,18 +74,13 @@ body {
 }
 
 #hebergement_article {
-    /*width: 100%;*/
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     width: 65vw;
     height: 100%;
-    padding-right:
-        /*1rem*/
-        0;
-    padding-left:
-        /*1rem*/
-        0;
+    padding-right: 0;
+    padding-left: 0;
     background-color: white;
 }
 
@@ -111,7 +97,6 @@ body {
 }
 
 #hebergement_aside {
-    /*width: 100%;*/
     padding-right: 1rem;
     padding-left: 1rem;
     width: 34vw;
@@ -120,7 +105,6 @@ body {
 
 #resultat_populaires {
     flex-direction: row;
-    /*justify-content: space-between;*/
     align-items: flex-start;
     flex-wrap: wrap;
     height: 100%;
