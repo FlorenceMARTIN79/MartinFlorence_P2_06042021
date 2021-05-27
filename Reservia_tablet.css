@@ -177,6 +177,7 @@ body {
 #contenu_footer {
     padding: 0;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 #contenu_footer div {
