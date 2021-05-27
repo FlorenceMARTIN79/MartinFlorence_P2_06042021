@@ -164,7 +164,31 @@ body {
     margin-left: 1rem;
 }
 
+#resultat_activites {
+    flex-wrap: wrap;
+    height: 50rem;
+    align-content: space-between;
+}
 
+#resultat_activites div {
+    width: 48%;
+    height: 49%;
+}
+
+.thumbnail_column {
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.thumbnail_column a {
+    width: 50%;
+}
+
+#vignette_fort_pomegues, #vignette_ile_frioul, #vignette_notre_dame_garde, #vignette_parc_longchamp {
+    height: 100%;
+    width: 48%;
+}
 
 #contenu_footer {
     padding: 0;
