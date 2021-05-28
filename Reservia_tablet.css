@@ -144,7 +144,7 @@ body {
     justify-content: space-evenly;
 }
 
-#activite_article {
+/*#activite_article {
     margin-left: 1rem;
 }
 
@@ -172,7 +172,7 @@ body {
 #vignette_fort_pomegues, #vignette_ile_frioul, #vignette_notre_dame_garde, #vignette_parc_longchamp {
     height: 100%;
     width: 48%;
-}
+}*/
 
 #contenu_footer {
     padding: 0;

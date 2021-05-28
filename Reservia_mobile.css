@@ -330,7 +330,7 @@ body {
 }
 
 /*Mise en page Activités*/
-#activite_article {
+/*#activite_article {
     height: 50%;
 }
 
@@ -354,7 +354,7 @@ body {
     height: 100%;
 }*/
 
-.big_thumbnail a {
+/*.big_thumbnail a {
     height: 10rem;
 }
 #resultat_activites>div {
@@ -362,7 +362,7 @@ body {
 }
 
 #vignette_fort_pomegues, #vignette_ile_frioul, #vignette_notre_dame_garde, #vignette_parc_longchamp {
-    height: /*50%*/9rem;
+    height: /*50%*//*9rem;
 }
 
 #resultat_activites {
@@ -373,7 +373,7 @@ body {
 }
 
 #activite_article img{
-    height: /*80%*/7rem;
+    height: /*80%*//*7rem;
     border-radius: 15px 15px 0 0 ;
 }
 
