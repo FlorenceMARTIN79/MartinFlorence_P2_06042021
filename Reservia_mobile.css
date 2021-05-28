@@ -199,17 +199,6 @@ body {
     position: relative;
 }
 
-/*.loupe i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
-    text-align: center;
-    margin-right: 0;
-    background: none;
-    border-radius: 0;
-}*/
-
 .filtres {
     flex-wrap: wrap;
 }
@@ -261,12 +250,7 @@ body {
 }
 
 #div_accomodations {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    width: 100%;
     max-width: 480px;
-    height: 100%;
 }
 
 #hebergement_article {
@@ -330,9 +314,9 @@ body {
 }
 
 /*Mise en page Activités*/
-#activite_article {
+/*#activite_article {
     height: 50%;
-}
+}*/
 
 #activite_article div{
     flex-direction: column;
@@ -354,27 +338,37 @@ body {
     height: 100%;
 }*/
 
-.big_thumbnail a {
+/*.big_thumbnail a {
     height: 10rem;
+}*/
+
+.big_thumbnail {
+    flex-grow: 1;
 }
+
+.thumbnail_column {
+    flex-grow: 2;
+}
+
 #resultat_activites>div {
-    height: auto;
+    height: 10rem;
 }
 
 #vignette_fort_pomegues, #vignette_ile_frioul, #vignette_notre_dame_garde, #vignette_parc_longchamp {
-    height: /*50%*/9rem;
+    height: /*50%*/10rem;
 }
 
 #resultat_activites {
     flex-direction: column;
     flex-wrap: nowrap;
-    height: 80rem;
+    height: auto /*50rem*/;
+    min-height: 65rem;
     justify-content: flex-start;
 }
 
 #activite_article img{
     height: /*80%*/7rem;
-    border-radius: 15px 15px 0 0 ;
+    border-radius: 15px 15px 0 0;
 }
 
 #activite_article [class^=comment] {

@@ -32,6 +32,10 @@ body {
 }
 
 /*Mise en page responsive tablette main*/
+main {
+    margin-right: 0.5rem;
+}
+
 #result_no_accomodation {
     margin-top: 1rem;
     margin-bottom: 0;
@@ -54,7 +58,6 @@ body {
 
 [id^=hebergement] {
     margin-top: 1rem;
-    border-radius: 0;
 }
 
 [id^=vignette] {
@@ -100,7 +103,8 @@ body {
     padding-right: 1rem;
     padding-left: 1rem;
     width: 34vw;
-    background-color: #DEEBFF;
+    background-color: #F2F2F2;
+
 }
 
 #resultat_populaires {

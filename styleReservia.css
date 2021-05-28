@@ -782,7 +782,6 @@ article [class^=photos] {
 
 #resultat_activites>div {
     border-radius: 15px 15px 15px 15px;
-    /*box-shadow: 0 5px 5px #F2F2F2;*/
     padding: 0;
     justify-content: space-between;
     width: 23%;
