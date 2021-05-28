@@ -340,6 +340,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     height: 900px;
+    min-height: 100vh;
 }
 
 /*#blocpage {
@@ -771,7 +772,87 @@ article [class^=photos] {
     object-fit: cover;
 }
 
-/*Mise en page des activités*/
+/*MISE EN PAGE DES ACTIVITES*/
+/*#activite_article {
+    height: 50%;
+}*/
+
+#resultat_activites {
+    flex-direction: row;
+    max-width: 100%;
+    border: 1px blue solid;
+    /*flex-wrap: wrap;*/
+}
+
+.activities_big_thumbnails {
+    /*max-width: 100%;
+    width: 100%;*/
+    border: 1px red solid;
+    height: 100%;
+    width: 100%;
+    /*max-height: 95%;*/
+}
+
+.big_thumbnail {
+    height: 100%;
+}
+
+/*#resultat_activites a:nth-child(1), #resultat_activites a:nth-child(4) {
+    height: 100%;
+}*/
+
+#resultat_activites>div {
+    max-width: 23%;
+}
+
+.activities_small_thumbnails {
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.small_thumbnail:nth-child(1) {
+    height: 55%;
+}
+
+.small_thumbnail:nth-child(2) {
+    height: 40%;}
+
+/*#resultat_activites div:nth-child(1), #resultat_activites div:nth-child(3) {
+    height: 100%;
+}*/
+
+/*.activities_big_thumbnails {
+    height: 95%;
+    border: 2px orange solid;
+}
+
+/*#resultat_activites a:nth-child(2) {
+    height: 50%;
+}*/
+
+#resultat_activites img {
+    display: block;
+    /*height: 120%;*/
+    /*flex-grow: 2;*/
+    max-height: 100%;
+    height: 100%;
+    border: 2px orange solid;
+}
+
+.comment_vignette_activites {
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    border: 2px green solid;
+    margin-top: auto;
+}
+
+
+
 /*#activite_article {
     margin-bottom: 1.7rem;
 }
@@ -846,25 +927,14 @@ article [class^=photos] {
 /*Mise en page du footer*/
 .footer {
     background-color: #F2F2F2;
-    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: auto;
-    flex: none;
-    height: auto;
-}
-
-#contenu_footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
     padding-left: 50px;
     padding-right: 50px;
 }
 
-#contenu_footer h3 {
+.footer h3 {
     font-size: 1em;
     margin-top: 3rem;
 }
@@ -875,6 +945,7 @@ article [class^=photos] {
     flex-direction: column;
     margin: 0;
     font-size: 1em;
+    padding-right: 10rem;
 }
 
 .footer li:last-child {

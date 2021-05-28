@@ -144,6 +144,8 @@ body {
     justify-content: space-evenly;
 }
 
+
+
 /*#activite_article {
     margin-left: 1rem;
 }
@@ -174,16 +176,23 @@ body {
     width: 48%;
 }*/
 
-#contenu_footer {
-    padding: 0;
+/*#vignette_vieux_port  {
+    height: 100%;
+}
+ #vignette_fort_pomegues {
+     height: 60%;
+ }*/
+
+.footer {
+    /*padding: 0;*/
     flex-wrap: wrap;
     width: 100%;
 }
 
-#contenu_footer div {
+.footer div {
     min-width: 240px;
 }
 
-#contenu_footer a {
+.footer a {
     margin-bottom: 0;
 }
