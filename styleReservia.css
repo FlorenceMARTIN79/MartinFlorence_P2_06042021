@@ -11,7 +11,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-html {
+ html {
     line-height: 1.15;
     /* 1 */
 }
@@ -777,11 +777,25 @@ article [class^=photos] {
     height: 50%;
 }*/
 
-#resultat_activites {
+#results_activities {
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
     max-width: 100%;
     border: 1px blue solid;
+    height: 90%;
+    margin-bottom: 2vh;
     /*flex-wrap: wrap;*/
+}
+
+/*#resultat_activites>div*/.activities_big_thumbnails, .activities_small_thumbnails {
+    max-width: 23%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: pink;
+    /*max-height: 100%;*/
 }
 
 .activities_big_thumbnails {
@@ -793,7 +807,87 @@ article [class^=photos] {
     /*max-height: 95%;*/
 }
 
+.activities_small_thumbnails {
+    /*height: 100%;*/
+    /*max-height: 100%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .big_thumbnail {
+    height: 100%;
+    border: 5px goldenrod solid;
+    display: flex;
+    flex-direction : column;
+    justify-content: flex-end;
+}
+
+.small_thumbnail {
+    border: 5px goldenrod solid;
+}
+
+/*.img_big_thumbnail, .img_small_thumbnail*/ a [class^=img] {
+    /*height: 100%;*/
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-grow: 2;
+    border: 3px grey dotted;
+}
+
+/*.big_thumbnail img {
+    display: block;
+    /*flex-grow: 2;*/
+    /*width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    max-height: 100%;
+    height: 100%;
+    margin-top: 0;
+    border: 2px purple solid;
+}*/
+
+#results_activities img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    border: 2px purple solid;
+}
+
+.img_big_thumbnail img {
+    height: 100%;
+}
+
+/*.img_small_thumbnail img {
+    border: 2px purple solid;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}*/
+
+#thumbnail_fort_pomegues {
+    justify-content: flex-end;
+    height: 55%;
+    border: 6px grey solid;
+}
+
+#thumbnail_fort_pomegues div:last-child {
+    /*height: 5vh;*/
+}
+
+#thumbnail_fort_pomegues img {
+    height: 10%;
+}
+
+.comment_vignette_activites {
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    border: 2px green solid;
+}
+
+/*.big_thumbnail {
     height: 100%;
 }
 
@@ -801,24 +895,15 @@ article [class^=photos] {
     height: 100%;
 }*/
 
-#resultat_activites>div {
-    max-width: 23%;
+
+
+
+/*.small_thumbnail a:nth-child(1) {
+    height: 10%;
 }
 
-.activities_small_thumbnails {
-    height: 100%;
-    max-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.small_thumbnail:nth-child(1) {
-    height: 55%;
-}
-
-.small_thumbnail:nth-child(2) {
-    height: 40%;}
+.small_thumbnail a:nth-child(2) {
+    height: 35%;}
 
 /*#resultat_activites div:nth-child(1), #resultat_activites div:nth-child(3) {
     height: 100%;
@@ -833,23 +918,7 @@ article [class^=photos] {
     height: 50%;
 }*/
 
-#resultat_activites img {
-    display: block;
-    /*height: 120%;*/
-    /*flex-grow: 2;*/
-    max-height: 100%;
-    height: 100%;
-    border: 2px orange solid;
-}
 
-.comment_vignette_activites {
-    display: flex;
-    align-items: center;
-    height: 5vh;
-    width: 100%;
-    border: 2px green solid;
-    margin-top: auto;
-}
 
 
 
