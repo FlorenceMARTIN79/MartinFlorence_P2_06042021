@@ -479,7 +479,7 @@ article [class^=photos] {
 }
 
 #results_activities>div {
-    width: 24%;
+    width: 22%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -513,7 +513,13 @@ article [class^=photos] {
 
 .photos_activites {
     width: 100%;
-    object-fit: cover;
+    /*object-fit: cover;*/
+}
+
+.img_container {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%; 
 }
 
 .activities_big_thumbnails img {
@@ -525,7 +531,7 @@ article [class^=photos] {
 }
 
 #results_activities figcaption {
-    height: 4vh;
+    height: 5vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -538,41 +544,26 @@ article [class^=photos] {
     background-color: white;
 }
 
-#thumbnail_fort_pomegues figure {
-    height: 55%;
-    overflow:hidden;
+#thumbnail_fort_pomegues {
+    height: 25vh;
 }
 
 #thumbnail_fort_pomegues img {
-    height: 16vh;
+    height: 23vh;
 }
 
 #thumbnail_iles_frioul img {
-    height: 12vh;
-    margin-top: 1vh;
+    height: 17vh;
+    margin-top: 5vh;
 }
 
-#test3 {
-    height: 15vh;
-}
-
-#img_test3 {
-    height: 15vh;
-    display: flex;
-    align-items: flex-start;
-    max-width: 100%;
-    
-}
-
-#thumbnail_notre_dame_garde img {
-    /*height: 100%  ;*/
-    object-fit: cover;
-    width: 100%;
+#thumbnail_notre_dame_garde {
+    height: 20vh;
 }
 
 #thumbnail_parc_longchamp img {
-    height: 13vh;
-    margin-top: 1vh;
+    margin-top: 5vh;
+    height: 22vh;
 }
 
 /*Mise en page du footer*/
