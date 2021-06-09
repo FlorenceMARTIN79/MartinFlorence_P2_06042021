@@ -27,10 +27,8 @@ body {
     display: flex;
     font-family: "ralewayregular", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
     margin: 0;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     height: 900px;
     min-height: 100vh;
 }
@@ -43,17 +41,12 @@ body {
 
 .titre1em {
     font-size: 1.4em;
-    font-weight: 900;
     margin-top: 1.7em;
 }
 
 .titre08em {
     font-size: 0.8em;
     font-weight: bold;
-}
-
-.paragraphe {
-    font-size: 1em;
 }
 
 ul {
@@ -68,14 +61,12 @@ a {
 .header {
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 /*Mise en page de la partie entête du header*/
 #entete {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
 }
 
 #logo_reservia_svg {
@@ -83,29 +74,14 @@ a {
     padding-top: 2.7em;
 }
 
-#navigation {
-    width: auto;
-    height: 100%;
-    align-self: flex-start;
-}
-
 #navigation ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: flex-start;
-    padding-left: 0px;
     margin-top: 0;
-    margin-bottom: 1.4em;
     padding-right: 1em;
-    width: 100%;
 }
 
 #navigation li {
     display: flex;
-    align-items: flex-end;
-    font-size: 1em;
-    text-decoration: none;
     font-weight: bold;
     height: 4.1em;
 }
@@ -115,8 +91,6 @@ a {
     display: flex;
     align-items: flex-end;
     color: black;
-    text-decoration: none;
-    height: 100%;
     padding: 0em 1.5em 0em 1.5em;
 }
 
@@ -137,7 +111,6 @@ a#div_inscription {
 /*Mise en page de la suite du header*/
 .recherche {
     display: flex;
-    justify-content: flex-start;
     height: 3.3em;
 }
 
@@ -146,7 +119,6 @@ a#div_inscription {
     justify-content: center;
     align-items: center;
     font-size: 1.2em;
-    text-align: center;
     height: 100%;
     width: 3em;
     background-color: #f2f2f2;
@@ -179,40 +151,30 @@ input {
     outline: none;
 }
 
-
-
 input[type="submit"], button[type="submit"]{
     cursor: pointer;
 }
 
 .bouton_rechercher {
     display: block;
-    width: 100px;
     border-radius: 0px 15px 15px 0px;
     background-color: #0065fc;
     color: white;
     font-size: 1.2em;
-    height: 100%;
     width: 8.5rem;
 }
 
 .filtres {
     display: flex;
-    width: 100%;
     align-items: center;
 }
 
 .filtres p {
-    font-weight: bold;
     font-size: 1.1em;
 }
 
 .list_filters {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    font-weight: bold;
     width: 100%;
 }
 
@@ -224,7 +186,6 @@ input[type="submit"], button[type="submit"]{
 .btn_filter {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: white;
     border: 2px #f2f2f2 solid;
     border-left: none;
@@ -268,7 +229,6 @@ input[type="submit"], button[type="submit"]{
 
 #result_no_accomodation {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     height: 2rem;
     margin-bottom: 2rem;
@@ -287,7 +247,6 @@ input[type="submit"], button[type="submit"]{
 }
 
 #result_no_accomodation p {
-    margin: 0;
     padding-left: 0.5em;
 }
 
@@ -299,14 +258,11 @@ h2[class="titre1em"] {
 .thumbnail_column {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 [id^=resultat] {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
     height: 80%;
 }
 
@@ -314,9 +270,6 @@ h2[class="titre1em"] {
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    flex-grow: 0;
-    text-decoration: none;
     color: black;
     border-radius: 15px;
 }
@@ -324,7 +277,6 @@ h2[class="titre1em"] {
 /*Mise en page des hebergements*/
 #div_accomodations {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -338,12 +290,10 @@ h2[class="titre1em"] {
 
 [id^=hebergement] h2 {
     margin-top: 0;
-    margin-bottom: 1.6em;
 }
 
 [id^=hebergement] [id^=vignette] {
     padding: 0.3rem;
-    width: 28%;
 }
 
 [id^=vignette] h3 {
@@ -356,10 +306,6 @@ h2[class="titre1em"] {
     font-size: 0.8em;
 }
 
-[id^=vignette] img {
-    object-fit: cover;
-}
-
 [class^=comment] {
     margin-left: 0.2em;
 }
@@ -370,7 +316,6 @@ h2[class="titre1em"] {
 
 .stars {
     display: flex;
-    margin: 0;
     font-size: 0.7em;
     color: #0065FC;
 }
@@ -378,7 +323,6 @@ h2[class="titre1em"] {
 /*Mise en page de l'article Hébergements*/
 #hebergement_article {
     width: 65%;
-    height: 100%;
 }
 
 #resultat_hebergements {
@@ -399,7 +343,6 @@ article [class^=photos] {
 }
 
 .photos_hebergements {
-    max-width: 100%;
     height: 55%;
 }
 
@@ -407,7 +350,6 @@ article [class^=photos] {
     display: flex;
     flex-direction: column;
     height: 40%;
-    justify-content: space-evenly;
     padding-left: 0.7em;
 }
 
@@ -421,14 +363,12 @@ article [class^=photos] {
 #hebergement_article .titre08em {
     font-size: 1.2rem;
     color: black;
-    text-decoration: none;
     margin-top: 1em;
 }
 
 /*Mise en page de l'aside Les plus populaires*/
 #hebergement_aside {
     width: 32%;
-    height: 100%;
 }
 
 #entete_populaires {
@@ -439,10 +379,6 @@ article [class^=photos] {
     margin-bottom: 1.6em;
 }
 
-#entete_populaires h2 {
-    margin: 0;
-}
-
 #resultat_populaire {
     height: 100%;
 }
@@ -450,7 +386,6 @@ article [class^=photos] {
 #resultat_populaires a {
     display: flex;
     flex-direction: row;
-    width: 100%;
     height: 30%;
 }
 
@@ -465,16 +400,12 @@ article [class^=photos] {
 #resultat_populaires img {
     width: 39%;
     border-radius: 15px 0 0 15px;
-    object-fit: cover;
 }
 
 /*MISE EN PAGE DES ACTIVITES*/
 #results_activities {
-    display: flex; 
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
-    width: 100%;
-    max-width: 100%;
     margin-bottom: 3rem;
 }
 
@@ -482,19 +413,14 @@ article [class^=photos] {
     width: 22%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 #results_activities a {
-    display: block;
-    max-height: 100%;
     overflow: hidden;
     border-radius: 15px;
 }
 
 .big_thumbnail {
-    display: flex;
-    justify-content: flex-end;
     height: 100%;
 }
 
@@ -505,7 +431,6 @@ article [class^=photos] {
 #results_activities figure {
     display: flex; 
     flex-direction: column;
-    width: 100%;
     height: 100%;
     margin: 0;
     position: relative
@@ -513,21 +438,11 @@ article [class^=photos] {
 
 .photos_activites {
     width: 100%;
-    /*object-fit: cover;*/
 }
 
 .img_container {
     display: flex;
     align-items: flex-start;
-    max-width: 100%; 
-}
-
-.activities_big_thumbnails img {
-    flex-grow: 2;
-}
-
-.activities_small_thumbnails img {
-    flex-grow: 0;
 }
 
 #results_activities figcaption {
@@ -536,7 +451,6 @@ article [class^=photos] {
     display: flex;
     align-items: center;
     padding-left: 1.5rem;
-    font-size: 1rem;
     font-weight: bold;
     color: black;
     position: absolute;
@@ -544,11 +458,15 @@ article [class^=photos] {
     background-color: white;
 }
 
+.img_big_thumbnail img {
+    height: 100%;
+}
+
 #thumbnail_fort_pomegues {
     height: 25vh;
 }
 
-#thumbnail_fort_pomegues img {
+#thumbnail_fort_pomegues .small {
     height: 23vh;
 }
 
@@ -570,7 +488,6 @@ article [class^=photos] {
 .footer {
     background-color: #F2F2F2;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding-left: 50px;
     padding-right: 50px;
@@ -585,8 +502,6 @@ article [class^=photos] {
     padding-left: 0;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    font-size: 1em;
     padding-right: 10rem;
 }
 
