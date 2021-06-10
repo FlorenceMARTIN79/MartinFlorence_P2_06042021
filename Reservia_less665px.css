@@ -1,0 +1,178 @@
+.body {
+    padding: 0;
+}
+
+
+
+/*mise en page #entete du header en responsive*/
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+#suite_header {
+    padding: 0 5% 0 5%;
+}
+
+#entete {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-right: 0;
+    width: 100%;
+}
+
+#entete div {
+    padding-left: 1.5rem;
+}
+
+#logo_reservia_svg {
+    object-fit: contain;
+    padding-top: 1.5rem;
+    height: 100%
+}
+
+#navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    height: 50%;
+}
+
+#navigation ul {
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0;
+}
+
+#navigation li {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    height: 100%;
+}
+
+#navigation a {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    font-weight: normal;
+    border-bottom: 2px #f2f2f2 solid;
+}
+
+.inscription #div_inscription {
+    border-bottom: none;
+    padding-right: 0;
+    justify-content: flex-end;
+    padding-right: 1.5rem;
+    align-items: flex-end;
+    color: #0065FC;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+#navigation a:hover {
+    border-bottom: 2px #0065FC solid;
+    border-top: none;
+    color: #0065FC;
+    font-weight: bold;
+}
+
+#navigation a:focus {
+    border-top: none;
+    border-bottom: 2px #0065FC solid;
+    font-weight: bold;
+}
+
+#navigation .inscription {
+    border-bottom: none;
+    padding-right: 0;
+}
+
+.filtres {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.list_filters {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+/*Hébergements à Marseille section layout*/
+#hebergement_article .titre08em {
+    margin-left: 0;
+}
+
+/*Les plus populaires section layout*/
+#resultat_populaires {
+    flex-direction: column;
+}
+
+#resultat_populaires a {
+    flex-direction: row;
+    width: 100%;
+    height: 20vh;
+}
+
+#resultat_populaires img {
+    border-radius: 15px 0 0 15px;
+    width: 30%;
+    height: 100%;
+}
+
+.comment_vignette_populaires {
+    justify-content: space-between;
+    height: 100%;
+}
+
+.texte_vignette_populaires {
+    justify-content: flex-start;
+    padding-top: 2vh;
+}
+
+.stars {
+    padding-bottom: 2vh;
+}
+
+.comment_vignette_populaires h3{
+    padding-bottom: 1vh;
+    flex-wrap: wrap;
+}
+
+/*Actvitiés à Marseille section layout*/
+#results_activities {
+    flex-direction: column;
+}
+
+#results_activities>div {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1.5rem;
+}
+
+.activities_big_thumbnails {
+    height: 30vh;
+}
+
+#thumbnail_vieux_port, #thumbnail_parc_calanques, #thumbnail_fort_pomegues, #thumbnail_iles_frioul, #thumbnail_notre_dame_garde, #thumbnail_parc_longchamp {
+    height: 25vh;
+}
+
+#thumbnail_iles_frioul, #thumbnail_parc_longchamp {
+    margin-top: 1rem;
+}
+
+

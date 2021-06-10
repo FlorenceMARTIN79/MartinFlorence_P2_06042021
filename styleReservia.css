@@ -171,6 +171,7 @@ input[type="submit"], button[type="submit"]{
 
 .filtres p {
     font-size: 1.1em;
+    margin: 0;
 }
 
 .list_filters {
@@ -316,7 +317,7 @@ h2[class="titre1em"] {
 
 .stars {
     display: flex;
-    font-size: 0.7em;
+    font-size: 0.8em;
     color: #0065FC;
 }
 
