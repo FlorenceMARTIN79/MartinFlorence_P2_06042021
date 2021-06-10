@@ -1,25 +1,25 @@
 body {
     display: flex;
-    flex-direction: column;
-    width: auto;
+    /*flex-direction: column;
+    width: auto;*/
 }
 
 .header,
-.footer {
+.footer, .main {
     padding: 0 1rem 0 1rem;
 }
 
-.main {
+/*.main {
     padding: 0;
-}
+}*/
 
 /*Mise en page responsive tablette du header*/
 
 /*Mise en page responsive tablette du menu*/
 
-#navigation li {
+/*#navigation li {
     font-size: 1em;
-}
+}*/
 
 .list_filters {
     display: flex;
@@ -42,17 +42,17 @@ main {
     margin-left: 1rem;
 }
 
-#div_accomodations {
+/*#div_accomodations {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     height: auto;
-}
+}*/
 
 #resultat_hebergements {
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between;*/
     height: auto;
 }
 
@@ -70,18 +70,18 @@ main {
     color: white;
 }
 
-#hebergement_article .titre1em {
+/*#hebergement_article .titre1em {
     margin-top: 0;
     margin-bottom: 1.6em;
-    margin-left: 1rem;
-}
+    /*margin-left: 1rem;
+}*/
 
 #hebergement_article {
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    /*justify-content: flex-start;
+    flex-wrap: wrap;*/
     width: 65vw;
-    height: 100%;
+    /*height: 100%;*/
     padding-right: 0;
     padding-left: 0;
     background-color: white;
@@ -91,7 +91,7 @@ main {
     background-color: #F2F2F2;
     height: 16rem;
     min-width: 45%;
-    margin-left: 0.5rem;
+    /*margin-left: 0.5rem;*/
     margin-right: 0.5rem;
 }
 
@@ -104,7 +104,7 @@ main {
     padding-left: 1rem;
     width: 34vw;
     background-color: #F2F2F2;
-
+    border-radius: 15px;
 }
 
 #resultat_populaires {
@@ -148,46 +148,15 @@ main {
     justify-content: space-evenly;
 }
 
-#activite_article {
-    margin-left: 1rem;
-}
-
-#resultat_activites {
-    flex-wrap: wrap;
-    height: 50rem;
-    align-content: space-between;
-}
-
-#resultat_activites div {
-    width: 48%;
-    height: 49%;
-}
-
-.thumbnail_column {
-    flex-direction: row;
-    height: 100%;
-    justify-content: space-between;
-}
-
-.thumbnail_column a {
-    width: 50%;
-}
-
-#vignette_fort_pomegues, #vignette_ile_frioul, #vignette_notre_dame_garde, #vignette_parc_longchamp {
-    height: 100%;
-    width: 48%;
-}
-
-#contenu_footer {
-    padding: 0;
+.footer {
     flex-wrap: wrap;
     width: 100%;
 }
 
-#contenu_footer div {
+.footer div {
     min-width: 240px;
 }
 
-#contenu_footer a {
+.footer a {
     margin-bottom: 0;
 }

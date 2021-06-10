@@ -16,112 +16,18 @@ body {
     padding-right: 0em;
 }
 
-/*.main, .footer {
-    padding: 0 5% 0 5%;
-}*/
+.suite_header, .main {
+    padding-left: 0;
+    padding-right: 0;
+}
 
 .titre1em {
     font-size: 1.5em;
 }
 
-/*mise en page #entete du header en responsive*/
-.header {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-}
-
-#suite_header {
-    padding: 0 5% 0 5%;
-}
-
-#entete {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: baseline;
-    padding-right: 0;
-    width: 100%;
-}
-
-#entete div {
-    padding-left: 1.5rem;
-}
-
-#logo_reservia_svg {
-    object-fit: contain;
-    padding-top: 1.5rem;
-    height: 100%
-}
-
-#navigation {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    width: 100%;
-    height: 50%;
-}
-
-#navigation ul {
-    flex-wrap: wrap-reverse;
-    justify-content: flex-end;
-    margin: 0;
-    height: 100%;
-    font-size: 1rem;
-    padding-right: 0;
-}
-
-#navigation li {
-    display: flex;
-    width: 50%;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0;
-    height: 100%;
-}
-
-#navigation a {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 1.5rem;
-    font-weight: normal;
-    border-bottom: 2px #f2f2f2 solid;
-}
-
-.inscription #div_inscription {
-    border-bottom: none;
-    padding-right: 0;
-    justify-content: flex-end;
-    padding-right: 1.5rem;
-    align-items: flex-end;
-    color: #0065FC;
-    font-weight: bold;
-    padding-bottom: 1rem;
-}
-
-#navigation a:hover {
-    border-bottom: 2px #0065FC solid;
-    border-top: none;
-    color: #0065FC;
-    font-weight: bold;
-}
-
-#navigation a:focus {
-    border-top: none;
-    border-bottom: 2px #0065FC solid;
-    font-weight: bold;
-}
-
-#navigation .inscription {
-    border-bottom: none;
-    padding-right: 0;
-}
-
 /*mise en page de #suite_header du header en responsive*/
 #suite_header .titre1em {
     font-size: 1.45em;
-    font-weight: bold;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
@@ -133,48 +39,29 @@ body {
 
 .recherche {
     margin-top: 2.2em;
-    margin-right: 0;
     height: 3.2em;
+    border: 1px #F2F2F2 solid;
+    border-radius: 15px;
+    border-left: none;
+    border-right: none;
     width: 100%;
 }
 
 .recherche label {
     width: 3.5em;
-    position: absolute;
-    left: 0;
-    z-index: 2;
     height: 100%;
-}
-
-.recherche i {
-    height: 100%;
-    margin-bottom: 0;
-    width: 100%;
 }
 
 #lieu {
     border-right: none;
     font-size: 1.2em;
-    font-weight: bold;
     padding-left: 5%;
-    position: absolute;
-    right: 0;
-    left: 2.9em;
-    height: 100%;
-    padding-right: 2em;
+    padding-right: 3.3rem;
+    border-radius: 0 15px 15px 0 ;
 }
 
 .bouton_rechercher {
     visibility: hidden;
-    display: block;
-    width: 3.3rem;
-    height: 3.2em;
-    border-radius: 15px 15px 15px 15px;
-    background-color: #0065fc;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    right: 0;
 }
 
 .bouton_rechercher::after {
@@ -183,10 +70,9 @@ body {
     font-weight: 900;
     font-size: 1.2rem;
     visibility: visible;
-    display: block;
     position: absolute;
-    top: -0.1em;
-    right: 1rem;
+    top: 0em;
+    right: 0rem;
     background-color: #0065FC;
     width: 3.3rem;
     height: 2rem;
@@ -199,24 +85,8 @@ body {
     position: relative;
 }
 
-.filtres {
-    flex-wrap: wrap;
-}
-
-.filtres p {
-    font-size: 1.2em;
-    margin-bottom: 0;
-}
-
 .list_filters {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     font-size: 0.9em;
-    font-weight: bold;
-    height: auto;
-    padding-left: 0;
-    margin-top: 0;
 }
 
 .list_filters li {
@@ -233,12 +103,6 @@ body {
 }
 
 /*Mise en page du main*/
-.main {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2rem;
-}
-
 #result_no_accomodation {
     margin-left: 0;
     margin-bottom: 1rem;
@@ -246,11 +110,7 @@ body {
 }
 
 #logo_info {
-    width: 2.5rem;
-}
-
-#div_accomodations {
-    max-width: 480px;
+    width: 2rem;
 }
 
 #hebergement_article {
@@ -260,12 +120,22 @@ body {
     padding: 0 5% 0 5%;
 }
 
+#hebergement_article h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#hebergement_article .titre08em {
+    margin-top: 0.5rem;
+}
+
 #hebergement_aside {
     width: 100%;
     min-width: 100%;
     max-width: 480px;
     background-color: #F2F2F2;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-radius: 0;
 }
 
 [id^=vignette] {
@@ -273,6 +143,7 @@ body {
     height: 10rem;
     padding: 0.2em;
     border-radius: 15px;
+    margin-bottom: 0.5rem;
 }
 
 #resultat_hebergements {
@@ -285,114 +156,60 @@ body {
     width: 100%;
 }
 
+#hebergement_article [id^=vignette] {
+    background-color: white;
+    box-shadow: 0 5px 5px #F2F2F2;
+}
+
+.stars {
+    align-items: center;
+    padding-bottom: 0;
+}
+
+#hebergement_article .greystar {
+    color: #F2F2F2;
+}
+
+#hebergement_article [id^=vignette] {
+    height: 32vh;
+}
+
 #resultat_populaires a {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
     height: 30%;
 }
 
 .comment_vignette_populaires {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: 60%;
-    padding-right: 10%;
     padding-left: 5%;
 }
 
-.texte_vignette_populaires {
-    height: auto;
-}
-
-#resultat_populaires img {
-    width: 39%;
-    height: 100%;
-    border-radius: 15px 0 0 15px;
-    object-fit: cover;
+.comment_vignette_populaires h3 {
+    font-size: 0.8em;
 }
 
 /*Mise en page Activités*/
-/*#activite_article {
-    height: 50%;
-}*/
-
-#activite_article div{
-    flex-direction: column;
-    width: 100%;
+#activite_article {
+    padding: 0 5% 0 5%;
 }
 
-/*#activite_article .big_thumbnail {
-    height: 16%;
-}
-
-#activite_article .thumbnail_column {
-    height: 32%;
-}*/
-
-
-
-/*.big_thumbnail a,
-.thumbnail_column {
-    height: 100%;
-}*/
-
-/*.big_thumbnail a {
-    height: 10rem;
-}*/
-
-.big_thumbnail {
-    flex-grow: 1;
-}
-
-.thumbnail_column {
-    flex-grow: 2;
-}
-
-#resultat_activites>div {
-    height: 10rem;
-}
-
-#vignette_fort_pomegues, #vignette_ile_frioul, #vignette_notre_dame_garde, #vignette_parc_longchamp {
-    height: /*50%*/10rem;
-}
-
-#resultat_activites {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: auto /*50rem*/;
-    min-height: 65rem;
-    justify-content: flex-start;
-}
-
-#activite_article img{
-    height: /*80%*/7rem;
-    border-radius: 15px 15px 0 0;
-}
-
-#activite_article [class^=comment] {
-    position: static;
-    margin: 0;
-    height: 2rem;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-#activite_article a {
-    position: static;
-    width: 100%;
-}
-
-#activite_article [id^=vignette] {
+#activite_article h2 {
     margin-bottom: 1rem;
-    padding: 0;
 }
-
 
 /*Mise en page du FOOTER*/
 #contenu_footer {
     display: flex;
     flex-direction: column;
     padding: 0;
+}
+
+.footer h3 {
+    margin-top: 2.5rem;
+}
+
+.footer ul {
+    padding: 0;
+}
+
+.footer li:last-child {
+    margin-bottom: 0;
 }
