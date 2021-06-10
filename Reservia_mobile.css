@@ -21,6 +21,10 @@ body {
     padding-right: 0;
 }
 
+.main {
+    margin-right: 0;
+}
+
 .titre1em {
     font-size: 1.5em;
 }
@@ -71,7 +75,7 @@ body {
     font-size: 1.2rem;
     visibility: visible;
     position: absolute;
-    top: 0em;
+    top: -0.05em;
     right: 0rem;
     background-color: #0065FC;
     width: 3.3rem;
@@ -193,6 +197,15 @@ body {
 
 #activite_article h2 {
     margin-bottom: 1rem;
+}
+
+#img_iles_frioul img, #img_parc_longchamp img {
+    height: auto;
+    max-height: 100%;
+}
+
+#img_parc_longchamp {
+    height: 100%;
 }
 
 /*Mise en page du FOOTER*/
