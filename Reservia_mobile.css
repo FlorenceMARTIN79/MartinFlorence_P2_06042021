@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("Fonts/fontawesome-free-5.15.3-web/webfonts/fa-solid-900.eot");
+    src: url("Fonts/fontawesome-free-5.15.3-web/webfonts/fa-solid-900.svg") format("svg"), url("Fonts/fontawesome-free-5.15.3-web/webfonts/fa-solid-900.woff") format("woff"); }
+  
+  .fa,
+  .fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; }
+
+body {
+    padding-left: 0em;
+    padding-right: 0em;
+}
+
+.suite_header, .main {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.titre1em {
+    font-size: 1.5em;
+}
+
+/*mise en page de #suite_header du header en responsive*/
+#suite_header .titre1em {
+    font-size: 1.45em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+#suite_header .paragraphe {
+    font-size: 1.03em;
+    margin-top: 0;
+}
+
+.recherche {
+    margin-top: 2.2em;
+    height: 3.2em;
+    border: 1px #F2F2F2 solid;
+    border-radius: 15px;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+}
+
+.recherche label {
+    width: 3.5em;
+    height: 100%;
+}
+
+#lieu {
+    border-right: none;
+    font-size: 1.2em;
+    padding-left: 5%;
+    padding-right: 3.3rem;
+    border-radius: 0 15px 15px 0 ;
+}
+
+.bouton_rechercher {
+    visibility: hidden;
+}
+
+.bouton_rechercher::after {
+    font-family: "Font Awesome 5 Free";
+    Content: "\f002";
+    font-weight: 900;
+    font-size: 1.2rem;
+    visibility: visible;
+    position: absolute;
+    top: 0em;
+    right: 0rem;
+    background-color: #0065FC;
+    width: 3.3rem;
+    height: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.2rem;
+    border-radius: 15px;
+}
+
+.recherche {
+    position: relative;
+}
+
+.list_filters {
+    font-size: 0.9em;
+}
+
+.list_filters li {
+    height: 3.2em;
+    padding-right: 0.5em;
+    margin-right: 0;
+    margin-top: 0.5em;
+}
+
+.list_filters i {
+    margin-right: 0.5em;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+/*Mise en page du main*/
+#result_no_accomodation {
+    margin-left: 0;
+    margin-bottom: 1rem;
+    padding: 0 5% 0 5%;
+}
+
+#logo_info {
+    width: 2rem;
+}
+
+#hebergement_article {
+    width: 100%;
+    min-width: 100%;
+    max-width: 480px;
+    padding: 0 5% 0 5%;
+}
+
+#hebergement_article h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#hebergement_article .titre08em {
+    margin-top: 0.5rem;
+}
+
+#hebergement_aside {
+    width: 100%;
+    min-width: 100%;
+    max-width: 480px;
+    background-color: #F2F2F2;
+    padding-bottom: 2rem;
+    border-radius: 0;
+}
+
+[id^=vignette] {
+    width: 100%;
+    height: 10rem;
+    padding: 0.2em;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+}
+
+#resultat_hebergements {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#resultat_hebergements a {
+    width: 100%;
+}
+
+#hebergement_article [id^=vignette] {
+    background-color: white;
+    box-shadow: 0 5px 5px #F2F2F2;
+}
+
+.stars {
+    align-items: center;
+    padding-bottom: 0;
+}
+
+#hebergement_article .greystar {
+    color: #F2F2F2;
+}
+
+#hebergement_article [id^=vignette] {
+    height: 32vh;
+}
+
+#resultat_populaires a {
+    height: 30%;
+}
+
+.comment_vignette_populaires {
+    padding-left: 5%;
+}
+
+.comment_vignette_populaires h3 {
+    font-size: 0.8em;
+}
+
+/*Mise en page Activités*/
+#activite_article {
+    padding: 0 5% 0 5%;
+}
+
+#activite_article h2 {
+    margin-bottom: 1rem;
+}
+
+/*Mise en page du FOOTER*/
+#contenu_footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.footer h3 {
+    margin-top: 2.5rem;
+}
+
+.footer ul {
+    padding: 0;
+}
+
+.footer li:last-child {
+    margin-bottom: 0;
+}
