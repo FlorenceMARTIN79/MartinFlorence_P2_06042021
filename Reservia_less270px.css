@@ -1,0 +1,61 @@
+#entete {
+    justify-content: flex-start;
+}
+
+#navigation {
+    height: 25%;
+    align-items: flex-start;
+}
+
+#navigation ul {
+    flex-wrap: wrap;
+    padding-top: 1rem;
+}
+
+#navigation li {
+    width: 100%;
+}
+
+.list_filters li {
+    white-space: normal;
+    overflow:auto;
+}
+
+#navigation a {
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.inscription #div_inscription {
+    justify-content: center;
+    padding-bottom: 0.3em;
+    border-bottom: 2px #F2F2F2 solid;
+}
+
+#suite_header .titre1em, [id^=hebergement] h2, #activite_article h2  {
+    font-size: 1em;
+}
+
+#suite_header .paragraphe, #hebergement_article .titre08em {
+    font-size: 0.8em;
+}
+
+#lieu {
+    font-size: 1em;
+}
+
+.filtres p {
+    font-size: 0.8em;
+}
+
+.list_filters {
+    font-size: 0.8em;
+}
+
+#result_no_accomodation p {
+    font-size: 0.8em;
+}
+
+.texte_vignette_populaires {
+    padding-top: 0;
+}

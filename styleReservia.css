@@ -1,8 +1,3 @@
-
-
-
-
-
 @font-face {
     font-family: 'ralewayregular';
     src: url('Fonts/ralewayregularwebfont.eot');
@@ -111,7 +106,12 @@ a#div_inscription {
 /*Mise en page de la suite du header*/
 .recherche {
     display: flex;
+    align-items: center;
     height: 3.3em;
+}
+
+.recherche label {
+    height: 100%;
 }
 
 .recherche i {
@@ -139,6 +139,7 @@ input {
     font-weight: bold;
     padding-left: 0.5rem;
     width: 14.5rem;
+    height: 100%;
 }
 
 #lieu::placeholder {
@@ -151,7 +152,7 @@ input {
     outline: none;
 }
 
-input[type="submit"], button[type="submit"]{
+button[type="submit"]{
     cursor: pointer;
 }
 
@@ -162,6 +163,7 @@ input[type="submit"], button[type="submit"]{
     color: white;
     font-size: 1.2em;
     width: 8.5rem;
+    height: 3.3rem;
 }
 
 .filtres {
@@ -182,6 +184,7 @@ input[type="submit"], button[type="submit"]{
 .list_filters li {
     white-space: nowrap;
     margin-right: 4%;
+    background-color: pink;
 }
 
 .btn_filter {

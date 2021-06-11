@@ -43,7 +43,7 @@ body {
 
 .recherche {
     margin-top: 2.2em;
-    height: 3.2em;
+    height: 3.3em;
     border: 1px #F2F2F2 solid;
     border-radius: 15px;
     border-left: none;
@@ -52,37 +52,40 @@ body {
 }
 
 .recherche label {
+    display: flex;
+    align-items: center;
     width: 3.5em;
+    min-width: 2em;
     height: 100%;
 }
 
 #lieu {
-    border-right: none;
+    border: none;
     font-size: 1.2em;
     padding-left: 5%;
-    padding-right: 3.3rem;
-    border-radius: 0 15px 15px 0 ;
+    width: 100%;/*
+    min-width: 20vh;*/
 }
 
-.bouton_rechercher {
-    visibility: hidden;
+.bouton_rechercher span{
+    display: none;
 }
 
 .bouton_rechercher::after {
     font-family: "Font Awesome 5 Free";
-    Content: "\f002";
+    content: "\f002";
     font-weight: 900;
-    font-size: 1.2rem;
-    visibility: visible;
-    position: absolute;
-    top: -0.05em;
-    right: 0rem;
-    background-color: #0065FC;
-    width: 3.3rem;
-    height: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 0.2rem;
-    border-radius: 15px;
+    display: block;
+    width: 2.5rem;
+    max-width: 2.5rem;
+}
+
+.bouton_rechercher {
+    width: 2.5rem;
+    display: flex;
+    position: relative;
+    right: 0px;
+    align-items: center;
 }
 
 .recherche {
@@ -104,6 +107,18 @@ body {
     margin-right: 0.5em;
     width: 2.5rem;
     height: 2.5rem;
+}
+.btn_filter {
+    margin-right: 1rem;
+}
+
+.list_filters li {
+    display: flex;
+    align-items: center;
+    /*white-space: normal;*/
+    background-color: pink;
+    margin-top: 0;
+    overflow:hidden;
 }
 
 /*Mise en page du main*/
@@ -215,12 +230,28 @@ body {
     padding: 0;
 }
 
+.footer div {
+    min-width: 100%;
+}
+
 .footer h3 {
     margin-top: 2.5rem;
 }
 
 .footer ul {
     padding: 0;
+}
+
+.footer a {
+    display: block;
+    /*max-width: 30vh;*/;
+    margin: 0;
+}
+
+a div {
+    display: block;
+    max-width: 100%;
+    padding-bottom: 0.5rem;
 }
 
 .footer li:last-child {
