@@ -145,7 +145,7 @@
     padding-bottom: 2vh;
 }
 
-.comment_vignette_populaires h3{
+.comment_vignette_populaires h3 {
     padding-bottom: 1vh;
     flex-wrap: wrap;
 }
@@ -165,12 +165,16 @@
     height: 30vh;
 }
 
-#thumbnail_vieux_port, #thumbnail_parc_calanques, #thumbnail_fort_pomegues, #thumbnail_iles_frioul, #thumbnail_notre_dame_garde, #thumbnail_parc_longchamp {
+#thumbnail_vieux_port,
+#thumbnail_parc_calanques,
+#thumbnail_fort_pomegues,
+#thumbnail_iles_frioul,
+#thumbnail_notre_dame_garde,
+#thumbnail_parc_longchamp {
     height: 25vh;
 }
 
-#thumbnail_iles_frioul, #thumbnail_parc_longchamp {
+#thumbnail_iles_frioul,
+#thumbnail_parc_longchamp {
     margin-top: 1rem;
 }
-
-

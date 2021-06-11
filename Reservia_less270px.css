@@ -18,7 +18,7 @@
 
 .list_filters li {
     white-space: normal;
-    overflow:auto;
+    overflow: auto;
 }
 
 #navigation a {
@@ -32,11 +32,14 @@
     border-bottom: 2px #F2F2F2 solid;
 }
 
-#suite_header .titre1em, [id^=hebergement] h2, #activite_article h2  {
+#suite_header .titre1em,
+[id^=hebergement] h2,
+#activite_article h2 {
     font-size: 1em;
 }
 
-#suite_header .paragraphe, #hebergement_article .titre08em {
+#suite_header .paragraphe,
+#hebergement_article .titre08em {
     font-size: 0.8em;
 }
 
@@ -56,6 +59,15 @@
     font-size: 0.8em;
 }
 
-.texte_vignette_populaires {
-    padding-top: 0;
+#thumbnail_vieux_port,
+#thumbnail_parc_calanques,
+#thumbnail_fort_pomegues,
+#thumbnail_iles_frioul,
+#thumbnail_notre_dame_garde,
+#thumbnail_parc_longchamp {
+    height: 15vh;
+}
+
+#thumbnail_fort_pomegues .small {
+    height: 15vh;
 }

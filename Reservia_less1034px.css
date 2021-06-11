@@ -6,7 +6,9 @@
     width: 100%;
     height: 100%;
 }
-#hebergement_aside, #hebergement_article {
+
+#hebergement_aside,
+#hebergement_article {
     width: 100%;
 }
 
@@ -14,7 +16,8 @@
     flex-direction: row;
     width: 100%;
 }
-#resultat_populaires a{
+
+#resultat_populaires a {
     width: 30%;
     min-width: 0;
     position: static;
@@ -36,7 +39,7 @@
     justify-content: space-between;
 }
 
-.activities_small_thumbnails a{
+.activities_small_thumbnails a {
     width: 100%;
     height: 50%;
 }
@@ -53,7 +56,8 @@
     height: 45%;
 }
 
-#img_iles_frioul img, #img_parc_longchamp img {
+#img_iles_frioul img,
+#img_parc_longchamp img {
     margin-top: 0.5rem;
     height: 45%;
 }

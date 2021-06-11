@@ -4,19 +4,22 @@
     font-weight: 900;
     font-display: block;
     src: url("Fonts/fontawesome-free-5.15.3-web/webfonts/fa-solid-900.eot");
-    src: url("Fonts/fontawesome-free-5.15.3-web/webfonts/fa-solid-900.svg") format("svg"), url("Fonts/fontawesome-free-5.15.3-web/webfonts/fa-solid-900.woff") format("woff"); }
-  
-  .fa,
-  .fas {
+    src: url("Fonts/fontawesome-free-5.15.3-web/webfonts/fa-solid-900.svg") format("svg"), url("Fonts/fontawesome-free-5.15.3-web/webfonts/fa-solid-900.woff") format("woff");
+}
+
+.fa,
+.fas {
     font-family: 'Font Awesome 5 Free';
-    font-weight: 900; }
+    font-weight: 900;
+}
 
 body {
     padding-left: 0em;
     padding-right: 0em;
 }
 
-.suite_header, .main {
+.suite_header,
+.main {
     padding-left: 0;
     padding-right: 0;
 }
@@ -63,11 +66,10 @@ body {
     border: none;
     font-size: 1.2em;
     padding-left: 5%;
-    width: 100%;/*
-    min-width: 20vh;*/
+    width: 100%;
 }
 
-.bouton_rechercher span{
+.bouton_rechercher span {
     display: none;
 }
 
@@ -108,6 +110,7 @@ body {
     width: 2.5rem;
     height: 2.5rem;
 }
+
 .btn_filter {
     margin-right: 1rem;
 }
@@ -115,10 +118,8 @@ body {
 .list_filters li {
     display: flex;
     align-items: center;
-    /*white-space: normal;*/
-    background-color: pink;
     margin-top: 0;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 /*Mise en page du main*/
@@ -189,12 +190,16 @@ body {
     color: #F2F2F2;
 }
 
+div .greystar {
+    padding-bottom: 0;
+}
+
 #hebergement_article [id^=vignette] {
     height: 32vh;
 }
 
 #resultat_populaires a {
-    height: 30%;
+    max-height: 29%;
 }
 
 .comment_vignette_populaires {
@@ -214,7 +219,8 @@ body {
     margin-bottom: 1rem;
 }
 
-#img_iles_frioul img, #img_parc_longchamp img {
+#img_iles_frioul img,
+#img_parc_longchamp img {
     height: auto;
     max-height: 100%;
 }
@@ -244,7 +250,6 @@ body {
 
 .footer a {
     display: block;
-    /*max-width: 30vh;*/;
     margin: 0;
 }
 

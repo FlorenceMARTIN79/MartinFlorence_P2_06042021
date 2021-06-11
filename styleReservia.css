@@ -152,7 +152,7 @@ input {
     outline: none;
 }
 
-button[type="submit"]{
+button[type="submit"] {
     cursor: pointer;
 }
 
@@ -184,7 +184,6 @@ button[type="submit"]{
 .list_filters li {
     white-space: nowrap;
     margin-right: 4%;
-    background-color: pink;
 }
 
 .btn_filter {
@@ -335,7 +334,7 @@ h2[class="titre1em"] {
 
 #resultat_hebergements a {
     width: 31%;
-    height: 45%;
+    height: 40%;
 }
 
 [class^=photos] {
@@ -347,13 +346,13 @@ article [class^=photos] {
 }
 
 .photos_hebergements {
-    height: 55%;
+    height: 65%;
 }
 
 .comment_vignette_hebergements {
     display: flex;
     flex-direction: column;
-    height: 40%;
+    height: 30%;
     padding-left: 0.7em;
 }
 
@@ -428,12 +427,13 @@ article [class^=photos] {
     height: 100%;
 }
 
-.big_thumbnail, .small_thumbnail {
+.big_thumbnail,
+.small_thumbnail {
     box-shadow: 0 5px 5px #F2F2F2;
 }
 
 #results_activities figure {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     height: 100%;
     margin: 0;
