@@ -1,3 +1,5 @@
+/*Desktop layout*/
+
 @font-face {
     font-family: 'ralewayregular';
     src: url('Fonts/ralewayregularwebfont.eot');
@@ -52,13 +54,13 @@ a {
     text-decoration: none;
 }
 
-/*Mise en page du HEADER*/
+/*Desktop header layout*/
 .header {
     display: flex;
     flex-direction: column;
 }
 
-/*Mise en page de la partie entête du header*/
+/*Entete part of the header layout for desktop*/
 #entete {
     display: flex;
     justify-content: space-between;
@@ -103,7 +105,7 @@ a#div_inscription {
     color: #0065FC;
 }
 
-/*Mise en page de la suite du header*/
+/*Suite_header layout for desktop*/
 .recherche {
     display: flex;
     align-items: center;
@@ -224,7 +226,7 @@ button[type="submit"] {
     margin-right: 1rem;
 }
 
-/*Mise en page du MAIN*/
+/*desktop main layout*/
 .main {
     display: flex;
     flex-direction: column;
@@ -277,7 +279,7 @@ h2[class="titre1em"] {
     border-radius: 15px;
 }
 
-/*Mise en page des hebergements*/
+/*desktop hebergements section layout*/
 #div_accomodations {
     display: flex;
     justify-content: space-between;
@@ -315,15 +317,18 @@ h2[class="titre1em"] {
 
 .greystar {
     color: #F2F2F2;
+    display: flex;
+    align-items: flex-end;
 }
 
 .stars {
     display: flex;
+    align-items: flex-end;
     font-size: 0.8em;
     color: #0065FC;
 }
 
-/*Mise en page de l'article Hébergements*/
+/*desktop hebergement article layout*/
 #hebergement_article {
     width: 65%;
 }
@@ -352,8 +357,8 @@ article [class^=photos] {
 .comment_vignette_hebergements {
     display: flex;
     flex-direction: column;
-    height: 30%;
-    padding-left: 0.7em;
+    height: 100%;
+    padding: 0 0 0.5rem 0.7em;
 }
 
 .texte_vignette_hebergements {
@@ -369,7 +374,7 @@ article [class^=photos] {
     margin-top: 1em;
 }
 
-/*Mise en page de l'aside Les plus populaires*/
+/*desktop les plus populaires aside layout*/
 #hebergement_aside {
     width: 32%;
 }
@@ -395,9 +400,8 @@ article [class^=photos] {
 .comment_vignette_populaires {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding-right: 10%;
-    padding-left: 5%;
+    justify-content: space-between;
+    padding: 1rem 10% 1rem 5%;
 }
 
 #resultat_populaires img {
@@ -405,7 +409,7 @@ article [class^=photos] {
     border-radius: 15px 0 0 15px;
 }
 
-/*MISE EN PAGE DES ACTIVITES*/
+/*activites section layout for desktop*/
 #results_activities {
     display: flex;
     justify-content: space-between;
@@ -488,7 +492,7 @@ article [class^=photos] {
     height: 22vh;
 }
 
-/*Mise en page du footer*/
+/*desktop footer layout*/
 .footer {
     background-color: #F2F2F2;
     display: flex;

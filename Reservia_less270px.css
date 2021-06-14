@@ -1,4 +1,7 @@
-#entete {
+/*Responsive layout under 270px width*/
+
+/*Header layout less270px*/
+.titre08em {
     justify-content: flex-start;
 }
 
@@ -55,8 +58,17 @@
     font-size: 0.8em;
 }
 
+/*main layout less270px*/
 #result_no_accomodation p {
     font-size: 0.8em;
+}
+
+.photos_hebergements {
+    width: 100%;
+}
+
+#hebergement_article [id^=vignette] {
+    height: 20vh;
 }
 
 #thumbnail_vieux_port,

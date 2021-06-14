@@ -1,4 +1,6 @@
-/*Accomodations section layout*/
+/*Responsive layout under 1034px width*/
+
+/*Accomodations section layout for responsive under 1034px*/
 #div_accomodations {
     display: flex;
     flex-direction: column-reverse;
@@ -12,6 +14,10 @@
     width: 100%;
 }
 
+#hebergement_article [id^="vignette"] {
+    margin-right: 0;
+}
+
 #resultat_populaires {
     flex-direction: row;
     width: 100%;
@@ -23,7 +29,7 @@
     position: static;
 }
 
-/*Activities section layout*/
+/*Activities section layout for responsive under 1034px*/
 #results_activities {
     flex-wrap: wrap;
 }
@@ -64,8 +70,4 @@
 
 #results_activities figcaption {
     max-height: 5vh;
-}
-
-.footer {
-    
 }

@@ -1,3 +1,5 @@
+/*Responsive layout for tablet*/
+
 body {
     display: flex;
 }
@@ -8,7 +10,7 @@ body {
     padding: 0 1rem 0 1rem;
 }
 
-/*Mise en page responsive tablette du header*/
+/*header layout for tablet responsive*/
 .list_filters {
     display: flex;
     flex-wrap: wrap;
@@ -18,11 +20,7 @@ body {
     margin: 0.5em 2rem 0.5em 0;
 }
 
-/*Mise en page responsive tablette main*/
-main {
-    margin-right: 0.5rem;
-}
-
+/*main layout for tablet responsive*/
 #result_no_accomodation {
     margin-top: 1rem;
     margin-bottom: 0;
