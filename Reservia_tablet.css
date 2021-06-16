@@ -108,6 +108,14 @@ body {
 
 }
 
+.comment_vignette_populaires p {
+    padding-top: 0;
+}
+
+.comment_vignette_populaires .stars {
+    padding-top: 0.2rem;
+}
+
 .texte_vignette_populaires {
     display: flex;
     flex-direction: column;

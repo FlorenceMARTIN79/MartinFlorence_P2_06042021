@@ -339,7 +339,8 @@ h2[class="titre1em"] {
 
 #resultat_hebergements a {
     width: 31%;
-    height: 40%;
+    height: /*40%*/27vh;
+    margin-bottom: 2rem;
 }
 
 [class^=photos] {
@@ -351,13 +352,13 @@ article [class^=photos] {
 }
 
 .photos_hebergements {
-    height: 65%;
+    height: 60%;
 }
 
 .comment_vignette_hebergements {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 40%;
     padding: 0 0 0.5rem 0.7em;
 }
 
@@ -366,6 +367,7 @@ article [class^=photos] {
     flex-direction: column;
     height: 100%;
     justify-content: space-evenly;
+    padding-bottom: 0.2rem;
 }
 
 #hebergement_article .titre08em {
@@ -402,6 +404,10 @@ article [class^=photos] {
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem 10% 1rem 5%;
+}
+
+.comment_vignette_populaires p {
+    padding-top: 0.4rem;
 }
 
 #resultat_populaires img {
