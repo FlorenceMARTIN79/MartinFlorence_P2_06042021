@@ -75,6 +75,19 @@
     height: 20vh;
 }
 
+.texte_vignette_populaires {
+    padding-top: 0;
+}
+
+[id^=vignette] h3 {
+    font-size: 0.8em;
+}
+
+[id^=vignette] p {
+    font-size: 0.6em;
+}
+
+
 #thumbnail_vieux_port,
 #thumbnail_parc_calanques,
 #thumbnail_fort_pomegues,
