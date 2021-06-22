@@ -183,3 +183,7 @@
 #thumbnail_parc_longchamp {
     margin-top: 1rem;
 }
+
+#img_notre_dame img {
+    height: 55vh;
+}

@@ -221,7 +221,10 @@ div .greystar {
     margin-bottom: 1rem;
 }
 
-#img_iles_frioul img,
+#img_iles_frioul img {
+    height: 25vh;
+}
+
 #img_parc_longchamp img {
     height: auto;
     max-height: 100%;

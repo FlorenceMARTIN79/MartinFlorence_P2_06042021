@@ -29,7 +29,7 @@
     position: static;
 }
 
-/*Activities section layout for responsive under 1034px*/
+/*Activities section layout for responsive under 1129px*/
 #results_activities {
     flex-wrap: wrap;
 }
@@ -65,7 +65,11 @@
 #img_iles_frioul img,
 #img_parc_longchamp img {
     margin-top: 0.5rem;
-    height: 45%;
+    height: 17vh;
+}
+
+#img_notre_dame img {
+    height: 35vh;
 }
 
 #results_activities figcaption {
